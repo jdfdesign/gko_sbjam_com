@@ -1,0 +1,52 @@
+/*
+*= require_self
+******/
+
+/*-------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+$bodyBackground: #F2F2F2; 
+$baseFontFamily: Georgia,'Times New Roman',Times,serif;       
+$altFontFamily: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$baseFontColor: #707070;
+$altColor: #0796fb;//blue 
+$greyMedium: grey;
+$linkColor: #525049;
+$linkColorHover: #0796fb; 
+
+@import "gko/gko_public_all"; 
+@import "gko/elastislide";
+@import "gko/orbit";
+
+/*-----------------------------------------
+   STRUCTURE
+----------------------------------------- */
+.wrapper-wide {
+ @include container; 
+}
+.wrapper-content {
+ @include row;
+}
+#main-content{
+ @include column(12);
+}
+#main-content.sidebar {
+ @include column(8);
+}
+#sidebar{ 
+ @include column(4); 
+}
+#wrapper-wide-main {
+	padding-top:36px;
+}
+#wrapper-wide-footer {
+	padding: 60px 0 40px 0;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+}
+
