@@ -1,0 +1,16 @@
+cd ~/developer/workspace/gko_sbjam_com
+bundle install
+rails s
+bundle exec rake assets:precompile
+
+
+
+bundle exec rake railties:install:migrations
+bundle exec rake db:bootstrap
+(bundle exec rake gko:install
+bundle exec rake db:admin:create
+bundle exec rake db:load_default 
+bundle exec rake db:load_sample
+bundle exec rake gko:seed)
+ 
+
