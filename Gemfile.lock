@@ -1,19 +1,32 @@
 GIT
-  remote: git://github.com/thedarkone/rails-dev-boost.git
-  revision: c648d229fa981c5f9bcbd8ac6baa520582c248c6
-  specs:
-    rails-dev-boost (0.1.1)
-
-PATH
-  remote: /Users/regisbruggheman/Developer/Workspace/gko_cms_html/gko_auth
+  remote: git@github.com:jdfdesign/gko-cms-31.git
+  revision: 636d9eca61eb325e14cff6aadf86121dafcdc175
   specs:
     gko_auth (0.1.13)
       cancan (= 1.6.5)
       devise (= 1.5.1)
       gko_core
+    gko_documents (0.1.13)
+      dragonfly (~> 0.9.8)
+      gko_core
+      mime-types
+      rack-cache (>= 0.5.3)
+    gko_features (0.1.13)
+      dragonfly (~> 0.9.8)
+      gko_core
+      gko_images
+    gko_images (0.1.13)
+      dragonfly (~> 0.9.8)
+      gko_core
+      mime-types
+      rack-cache (>= 0.5.3)
+    gko_inquiries (0.1.13)
+      filters_spam (~> 0.2)
+      gko_core
 
-PATH
-  remote: /Users/regisbruggheman/Developer/Workspace/gko_cms_html/gko_core
+GIT
+  remote: git@github.com:jdfdesign/gko-cms-31.git
+  revision: 636d9eca61eb325e14cff6aadf86121dafcdc175
   specs:
     gko_core (0.1.13)
       activesupport-slices (= 0.0.2)
@@ -44,39 +57,6 @@ PATH
       uglifier (>= 1.0.3)
       uuid (= 2.3.1)
       will_paginate (~> 3.0.0)
-
-PATH
-  remote: /Users/regisbruggheman/Developer/Workspace/gko_cms_html/gko_documents
-  specs:
-    gko_documents (0.1.13)
-      dragonfly (~> 0.9.8)
-      gko_core
-      mime-types
-      rack-cache (>= 0.5.3)
-
-PATH
-  remote: /Users/regisbruggheman/Developer/Workspace/gko_cms_html/gko_features
-  specs:
-    gko_features (0.1.13)
-      dragonfly (~> 0.9.8)
-      gko_core
-      gko_images
-
-PATH
-  remote: /Users/regisbruggheman/Developer/Workspace/gko_cms_html/gko_images
-  specs:
-    gko_images (0.1.13)
-      dragonfly (~> 0.9.8)
-      gko_core
-      mime-types
-      rack-cache (>= 0.5.3)
-
-PATH
-  remote: /Users/regisbruggheman/Developer/Workspace/gko_cms_html/gko_inquiries
-  specs:
-    gko_inquiries (0.1.13)
-      filters_spam (~> 0.2)
-      gko_core
 
 GEM
   remote: http://rubygems.org/
@@ -255,12 +235,11 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.1.1)
   gko_auth!
-  gko_core!
+  gko_core (= 0.1.13)!
   gko_documents!
   gko_features!
   gko_images!
   gko_inquiries!
   iconv
-  rails-dev-boost!
   sass-rails (~> 3.1.5.rc1)
   uglifier (>= 1.0.3)
