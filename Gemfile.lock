@@ -9,6 +9,11 @@ GIT
       cancan (= 1.6.5)
       devise (= 1.5.1)
       gko_core
+    gko_documents (0.1.32)
+      dragonfly (~> 0.9.8)
+      gko_core
+      mime-types
+      rack-cache (>= 0.5.3)
     gko_features (0.1.32)
       dragonfly (~> 0.9.8)
       gko_core
@@ -235,6 +240,7 @@ DEPENDENCIES
   gko_albums!
   gko_auth!
   gko_core (= 0.1.32)!
+  gko_documents!
   gko_features!
   gko_images!
   gko_inquiries!
