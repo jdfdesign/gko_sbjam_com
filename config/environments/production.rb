@@ -20,6 +20,10 @@ GkoSbjamCom::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # Choose the compressors to use
+  config.assets.js_compressor  = :uglifier
+  # config.assets.css_compressor = :yui
+  
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
 
