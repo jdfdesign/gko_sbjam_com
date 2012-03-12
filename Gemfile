@@ -18,6 +18,8 @@ group :production do
   gem 'gko_inquiries', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
   gem 'gko_albums', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
   gem 'gko_features', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
+  gem 'execjs'
+  gem 'therubyracer'
 end
 #group :development do
 #  gem "gko_core", :path => File.expand_path('../../gko_cms_rails_3/gko_core', __FILE__)
