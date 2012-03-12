@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120223150851) do
+ActiveRecord::Schema.define(:version => 20120311140250) do
 
   create_table "accounts", :force => true do |t|
     t.string   "reference",  :limit => 40
@@ -303,18 +303,7 @@ ActiveRecord::Schema.define(:version => 20120223150851) do
   create_table "mail_methods", :force => true do |t|
     t.integer  "site_id"
     t.string   "environment"
-    t.boolean  "active",                 :default => true
-    t.boolean  "enable_mail_delivery",   :default => true
-    t.string   "mail_host"
-    t.string   "mail_domain"
-    t.integer  "mail_port",              :default => 25
-    t.string   "mail_auth_type"
-    t.string   "smtp_username"
-    t.string   "smtp_password"
-    t.string   "secure_connection_type"
-    t.string   "mails_from"
-    t.string   "mail_bcc"
-    t.string   "intercept_email"
+    t.boolean  "active",      :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -348,8 +337,10 @@ ActiveRecord::Schema.define(:version => 20120223150851) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "globalized",      :default => 0
+    t.integer  "position",        :default => 1
   end
 
+  add_index "partners", ["position", "section_id"], :name => "index_partners_on_position_and_section_id"
   add_index "partners", ["section_id"], :name => "index_partners_on_section_id"
   add_index "partners", ["site_id"], :name => "index_partners_on_site_id"
 
@@ -416,12 +407,13 @@ ActiveRecord::Schema.define(:version => 20120223150851) do
     t.string   "redirect_url"
     t.string   "title_addon"
     t.datetime "published_at"
-    t.boolean  "hidden",           :default => false
+    t.boolean  "hidden",            :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "menu_title"
-    t.integer  "globalized",       :default => 0
+    t.integer  "globalized",        :default => 0
     t.integer  "level"
+    t.boolean  "shallow_permalink", :default => true
   end
 
   add_index "sections", ["link_id", "link_type"], :name => "index_sections_on_link_id_and_link_type"
@@ -500,6 +492,15 @@ ActiveRecord::Schema.define(:version => 20120223150851) do
 
   add_index "supports", ["owner_id", "owner_type"], :name => "index_supports_on_owner_id_and_owner_type", :unique => true
 
+  create_table "templates", :force => true do |t|
+    t.string   "name"
+    t.string   "template_type"
+    t.string   "subject"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "tokenized_permissions", :force => true do |t|
     t.integer  "permissable_id"
     t.string   "permissable_type"
@@ -518,9 +519,8 @@ ActiveRecord::Schema.define(:version => 20120223150851) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "reset_password_token"
-    t.string   "remember_token"
     t.string   "remember_created_at"
-    t.integer  "sign_in_count"
+    t.integer  "sign_in_count",                           :default => 0
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
@@ -542,6 +542,7 @@ ActiveRecord::Schema.define(:version => 20120223150851) do
     t.string   "authentication_token"
     t.string   "unlock_token"
     t.datetime "locked_at"
+    t.datetime "reset_password_sent_at"
   end
 
   add_index "users", ["account_id"], :name => "index_users_on_account_id"

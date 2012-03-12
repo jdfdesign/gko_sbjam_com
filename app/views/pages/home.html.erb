@@ -1,0 +1,40 @@
+<%
+@artists = Section.named("artists").children
+@features ||= site.features.visibles 
+%>
+<% content_for :page_content do %>
+  <% if @features.any? %>
+  <div class="row-fluid home-orbit">
+    <section class="span12">
+      <%= render 'shared/carousel', :features => @features %>
+    </section>
+  </div> 
+  <% end %>
+  <% if resource.body %>
+  <div class="row-fluid">
+    <section class="span12">
+      <%= resource.body.html_safe %>  				
+    </section>   
+  </div>
+  <% end %> 
+  <% if @artists.try(:any?) %>
+    <div class="row-fluid" id="artists">
+      <section class="span12"> 
+        <ul class="block-grid grid3">
+          <% @artists.each do |g| %>
+            <% if g.thumbnail %>
+             <li>
+               <div class="entry-thumb"> 
+                <%= link_to(image_fu(g.thumbnail, site.preferred_image_grid_size), url_for([g])) %>
+                </div>
+               <h3 class="entry-title">
+                 <%= link_to(g.title, url_for([g]), :class => 'entry-title', :rel => 'bookmark') %>
+               </h3>
+             </li>
+             <% end %>
+          <% end %>
+        </ul>
+      </section>  
+    </div>  
+  <% end %> 
+<% end %> 

@@ -1,4 +1,6 @@
-//= require gko/jquery.elastidegallery 
+//= require gko/jquery.elastidegallery
+//= require zurb/foundation/modernizr.foundation.js 
+//= require zurb/foundation/jquery.orbit-1.4.0.js 
 	
 $(document).ready(function() {
 	if($('.images:first').length > 0) {
@@ -9,12 +11,6 @@ $(document).ready(function() {
     $(this).css('width', '260px').find('ul').css('width', '260px');
   });
 	
-	$('#featured').orbit({ 
-		bullets : true, 
-		animation : "horizontal-push",
-		animationSpeed: 800,
-		timer: true,
-		fluid: false });
-		
-	$('.block-grid .entry-thumb').prepend("<div class='overlay'>+</div>");
+	$('.carousel').carousel();
+
 });

@@ -1,4 +1,73 @@
-$baseFontFamily: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$greenLight: #15D166;
+$greenMedium: #14A958;
+$greenDark: #06592c;
+$redMedium: #BF2922;
+$redDark: #610905;
+$global-radii-blocks: 4px;
+
+// Layout 
+$containerMaxWidth: 0; 
+$rowMaxWidth: 980px;
+
+$bodyBackgroundColor: #ff9900;
+$contentBackgroundColor: transparent;
+$footerBackgroundColor: $redMedium;
+$copyrightBackgroundColor: $footerBackgroundColor;
+$mainBackgroundColor: transparent;
+$sidebarBackgroundColor: transparent;
+
+// Typography
+$baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$baseFontSize: 14px;
+$baseLineHeight: 20px;
+$textColor: white;
+$headingFontFamily: $baseFontFamily;
+$headingTextColor: $textColor;
+
+
+// Links
+$linkColor: $textColor;
+$linkColorHover: $greenDark;
+$linkColorActive: $greenDark;
+
+// Header links
+$headerLinkColor: $linkColor;
+$headerLinkColorHover: $linkColorHover;
+$headerLinkColorActive: $linkColorActive;
+
+// Footer links
+$footerLinkColor: white;
+$footerLinkColorHover: $redDark;
+$footerLinkColorActive: $redDark;
+$footerResponsiveLinkBorder:$redDark;
+ 
+// Navbar
+$navbarBackgroundHighlight: $bodyBackgroundColor;
+$navbarBackground: $bodyBackgroundColor;
+$navbarText: $textColor;
+$navbarLinkColor: white;
+$navbarLinkColorHover: $linkColorHover;
+$navbarLinkColorActive: $linkColorHover; 
+$navbarButtonBackgroundHighlight: $greenLight; 
+$navbarButtonBackground: $greenMedium; 
+$navbarButtonIconBarColor: white;
+$navbarResponsiveLinkBorder: $greenDark;
+ 
+// Form
+$inputTextColor: $textColor;
+$inputBackgroundColor: $bodyBackgroundColor;
+$inputBorderColor: $textColor;
+$inputFocusBorderColor: rgba(82, 168, 236, 0.8); 
+$inputBorderRadius: 3px;
+
+// Grid 
+$blockGridBackgroundColor: transparent;
+$blockGridImageBackgroundColor: #feecad; 
+$blockGridImageBorder: 8px solid #feecad;
+
+
+
+
 @import "gko_public_all"; 
 @import "gko/elastislide"; 
 /*-----------------------------------------
@@ -10,19 +79,110 @@ $baseFontFamily: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", "Helvetic
 /*-----------------------------------------
  STRUCTURAL LAYOUT 
 ----------------------------------------- */
+body {
+ text-shadow: 0px 1px 0 #bf6e06;
+ background: $bodyBackgroundColor asset-url("bg.png",image) repeat-x top left; 
+}
+#content-container {
+	margin-top: -80px;
+	padding-bottom: 34px; 
+}
+#main-column {
+ width: 60%;
+ margin-left: 30%; 
+}
 /*-----------------------------------------
  SLIDESHOW
 ----------------------------------------- */
+.image-large-wrapper {
+	border: $blockGridImageBorder; 
+	@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px); 
+}
 /*-----------------------------------------
  HEADER
------------------------------------------ */ 
+----------------------------------------- */
+h4#site-subtitle {
+	position: absolute;
+	bottom: 10px;
+	left: 220px;
+}
+.navbar {
+	border-top: 6px solid $greenMedium;
+}
+.navbar-inner {
+	min-height: 200px;
+}
+.navbar .header-nav {
+	position:relative;
+	z-index: 10002;
+	.nav {
+		@include buttonBackground($greenLight, $greenMedium);
+		@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px);
+		@include corner-bottom(6px);
+		margin-right: 80px;
+	}
+}
+.navbar-inner {
+	background: none;
+	background-image: none; 
+} 
+.navbar .brand {
+	position: absolute;
+	margin-top: -2px;
+	left: 0px;
+	@include logo(220px, 200px);
+}
+.nav-collapse {
+	margin-left: 30%;
+} 
+
 /*-----------------------------------------
  HOME
 ----------------------------------------- */
+.carousel {
+	margin-bottom: $baseLineHeight * 2;
+}
+.carousel-inner {
+	border: $blockGridImageBorder;
+	@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px); 
+}
+
 /*-----------------------------------------
  FOOTER
------------------------------------------ */
+----------------------------------------- */ 
+
+#partners-container {
+ background: white; 
+ padding-top:14px;
+ padding-bottom:14px;
+ text-align: center;
+ ul {
+	@include horizontal-list;
+	li { 
+		display: block;
+		margin-left: 12px;
+		&:first-child {
+			 margin-left: 0px;
+		}
+	}
+ }
+}
+#footer-container {
+ background: $footerBackgroundColor asset-url("footer-bg.gif",image) repeat-x -20px left;
+}
+
+
 /*-----------------------------------------
  RESPONSIVE
 ----------------------------------------- */
 @import "gko/responsive";
+@media (max-width: 980px) {
+	.navbar .brand {
+		width: 110px;
+		height: 100px;
+	}
+	#main-column {
+	 width: 100%;
+	 margin-left: 0;
+	} 
+}
