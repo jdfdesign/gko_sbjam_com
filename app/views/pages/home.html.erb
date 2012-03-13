@@ -10,7 +10,7 @@
     </section>
   </div> 
   <% end %>
-  <% if resource.body %>
+  <% if resource.body.present? %>
   <div class="row-fluid">
     <section class="span12">
       <%= resource.body.html_safe %>  				

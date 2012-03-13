@@ -1,6 +1,6 @@
 <%
 if @partner_section = site.partner_lists.published.first
-  @partners = @partner_section.partners.order(:position)
+  @partners = @partner_section.partners.order(:position).limit(site.preferred_partners_in_home)
 end
 %>
 

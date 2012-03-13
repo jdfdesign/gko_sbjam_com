@@ -1,16 +1,20 @@
 //= require gko/jquery.elastidegallery
-//= require zurb/foundation/modernizr.foundation.js 
-//= require zurb/foundation/jquery.orbit-1.4.0.js 
 	
 $(document).ready(function() {
-	if($('.images:first').length > 0) {
-		Gallery.init($('.images:first'));
+	function init() {
+		if($('.images:first').length > 0) {
+			Gallery.init($('.images:first'));
+		} 
+		$("body").fadeIn(3000).css("display", "block");
+		$('.carousel').each(function(index) {
+			var _self = $(this);
+			console.log(_self.find('.item').length);
+			if(_self.find('.item').length > 1) {
+				_self.carousel();
+			}
+		}); 
 	}
-  
-	$("div.custom.dropdown").each(function () {
-    $(this).css('width', '260px').find('ul').css('width', '260px');
-  });
-	
-	$('.carousel').carousel();
+
+	init();
 
 });

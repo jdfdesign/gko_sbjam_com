@@ -52,7 +52,7 @@ $navbarButtonBackgroundHighlight: $greenLight;
 $navbarButtonBackground: $greenMedium; 
 $navbarButtonIconBarColor: white;
 $navbarResponsiveLinkBorder: $greenDark;
- 
+$navbarDropdownBackground: $greenMedium;  
 // Form
 $inputTextColor: $textColor;
 $inputBackgroundColor: $bodyBackgroundColor;
@@ -63,7 +63,8 @@ $inputBorderRadius: 3px;
 // Grid 
 $blockGridBackgroundColor: transparent;
 $blockGridImageBackgroundColor: #feecad; 
-$blockGridImageBorder: 8px solid #feecad;
+$blockGridImageBorder: 8px solid #feecad; 
+$blockGridImageCorner: 6px;
 
 
 
@@ -91,13 +92,7 @@ body {
  width: 60%;
  margin-left: 30%; 
 }
-/*-----------------------------------------
- SLIDESHOW
------------------------------------------ */
-.image-large-wrapper {
-	border: $blockGridImageBorder; 
-	@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px); 
-}
+
 /*-----------------------------------------
  HEADER
 ----------------------------------------- */
@@ -108,6 +103,7 @@ h4#site-subtitle {
 }
 .navbar {
 	border-top: 6px solid $greenMedium;
+	min-height: 200px;
 }
 .navbar-inner {
 	min-height: 200px;
@@ -118,7 +114,7 @@ h4#site-subtitle {
 	.nav {
 		@include buttonBackground($greenLight, $greenMedium);
 		@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px);
-		@include corner-bottom(6px);
+		@include border-radius($blockGridImageCorner);
 		margin-right: 80px;
 	}
 }
@@ -137,14 +133,20 @@ h4#site-subtitle {
 } 
 
 /*-----------------------------------------
- HOME
+ SLIDESHOW
 ----------------------------------------- */
+.image-large-wrapper {
+	border: $blockGridImageBorder; 
+	@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px); 
+	@include border-radius($blockGridImageCorner);
+}
 .carousel {
 	margin-bottom: $baseLineHeight * 2;
 }
 .carousel-inner {
 	border: $blockGridImageBorder;
-	@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px); 
+	@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px);
+	@include border-radius($blockGridImageCorner);
 }
 
 /*-----------------------------------------
