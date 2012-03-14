@@ -1,38 +1,38 @@
 GIT
   remote: git@github.com:jdfdesign/gko_cms_rails_3.git
-  revision: 7eb459af9758322afa03b0d4627081431ddad75c
+  revision: 2597e415a3c2e461746dcc2e9d212fbb4218eb14
   specs:
-    gko_albums (0.1.69)
+    gko_albums (0.1.70)
       gko_core
       gko_images
-    gko_auth (0.1.69)
+    gko_auth (0.1.70)
       cancan (= 1.6.7)
       devise (= 2.0.4)
       gko_core
-    gko_documents (0.1.69)
+    gko_documents (0.1.70)
       dragonfly (~> 0.9.8)
       gko_core
       mime-types
       rack-cache (>= 0.5.3)
-    gko_features (0.1.69)
+    gko_features (0.1.70)
       dragonfly (~> 0.9.8)
       gko_core
       gko_images
-    gko_images (0.1.69)
+    gko_images (0.1.70)
       dragonfly (~> 0.9.10)
       gko_core
       mime-types
       rack-cache (>= 0.5.3)
-    gko_inquiries (0.1.69)
+    gko_inquiries (0.1.70)
       filters_spam (~> 0.2)
       gko_core
       launchy
 
 GIT
   remote: git@github.com:jdfdesign/gko_cms_rails_3.git
-  revision: 7eb459af9758322afa03b0d4627081431ddad75c
+  revision: 2597e415a3c2e461746dcc2e9d212fbb4218eb14
   specs:
-    gko_core (0.1.69)
+    gko_core (0.1.70)
       activesupport-slices (= 0.0.2)
       acts_as_indexed (~> 0.7.7)
       capistrano
@@ -239,7 +239,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.1)
   gko_albums!
   gko_auth!
-  gko_core (= 0.1.69)!
+  gko_core (= 0.1.70)!
   gko_documents!
   gko_features!
   gko_images!
