@@ -1,31 +1,27 @@
 source :rubygems
-source 'http://rubygems.org'
 
-gem 'iconv'
-
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.1.5.rc2'
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
+ gem 'sass-rails', '~> 3.2.6'
+ gem 'coffee-rails', '~> 3.2.2'
+ gem 'uglifier', '>= 1.0.3'
 end
 group :production do
-  gem 'gko_core', '= 0.1.70', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
-  gem 'gko_auth', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
-  gem 'gko_images', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
-  gem 'gko_documents', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
-  gem 'gko_inquiries', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
-  gem 'gko_albums', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
-  gem 'gko_features', :git => 'git@github.com:jdfdesign/gko_cms_rails_3.git'
+  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.6.24.RC4" do
+    gem 'gko_core'
+    gem 'gko_auth'
+    gem 'gko_images'
+    gem 'gko_documents'
+    gem 'gko_inquiries'
+    gem 'gko_albums'
+    gem 'gko_features'
+	end
 end
-#group :production do
-#  gem "gko_core", :path => File.expand_path('../../gko_cms_rails_3/gko_core', __FILE__)
-#  gem "gko_auth", :path => File.expand_path('../../gko_cms_rails_3/gko_auth', __FILE__)
-#  gem "gko_images", :path => File.expand_path('../../gko_cms_rails_3/gko_images', __FILE__)
-#  gem "gko_documents", :path => File.expand_path('../../gko_cms_rails_3/gko_documents', __FILE__)
-#  gem "gko_inquiries", :path => File.expand_path('../../gko_cms_rails_3/gko_inquiries', __FILE__)
-#  gem "gko_albums", :path => File.expand_path('../../gko_cms_rails_3/gko_albums', __FILE__)
-#  gem "gko_features", :path => File.expand_path('../../gko_cms_rails_3/gko_features', __FILE__)
-#  gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git', :require => 'rails_development_boost'   
+#group :development, :test do
+#  gem "gko_core", :path => '~/Github/gko_cms3/gko_core'
+#  gem "gko_auth", :path => '~/Github/gko_cms3/gko_auth'
+#  gem "gko_images", :path => '~/Github/gko_cms3/gko_images'
+#  gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
+#  gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
+#  gem "gko_albums", :path => '~/Github/gko_cms3/gko_albums'
+#  gem "gko_features", :path => '~/Github/gko_cms3/gko_features'
 #end    

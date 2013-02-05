@@ -1,10 +1,11 @@
+<% cache [action_name, I18n.locale, resource.site, resource] do %>
 <%
-@artists = Section.named("artists").children
-@features ||= site.features.visibles 
+@artists = site.sections.named("artists").first.children
+@features ||= site.features.live 
 %>
 <% content_for :page_content do %>
   <% if @features.any? %>
-  <div class="row-fluid home-orbit">
+  <div class="row-fluid">
     <section class="span12">
       <%= render 'shared/carousel', :features => @features %>
     </section>
@@ -20,7 +21,7 @@
   <% if @artists.try(:any?) %>
     <div class="row-fluid" id="artists">
       <section class="span12"> 
-        <ul class="block-grid grid3">
+        <ul class="grid grid3">
           <% @artists.each do |g| %>
             <% if g.thumbnail %>
              <li>
@@ -38,3 +39,4 @@
     </div>  
   <% end %> 
 <% end %> 
+<% end %>
