@@ -1,6 +1,8 @@
 cd ~/Github/gko_sbjam_com
 bundle install
 rails s
+
+cd ~/Github/gko_sbjam_com
 bundle exec rake assets:precompile
 
 

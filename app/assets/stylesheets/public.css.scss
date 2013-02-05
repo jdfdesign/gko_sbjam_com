@@ -82,6 +82,12 @@ a:focus {
 /*-----------------------------------------
  TYPOGRAPHY 
 ----------------------------------------- */
+.btn-primary {
+	color: $gray;
+	&:hover {
+		color: $black;
+	};
+}
 /*-----------------------------------------
  STRUCTURAL LAYOUT 
 ----------------------------------------- */
@@ -109,38 +115,46 @@ h4#site-subtitle {
 .navbar {
 	border-top: 6px solid $greenMedium;
 	min-height: 200px;
+	.brand {
+		position: absolute;
+		margin-top: -2px;
+		left: 0px;
+		@include logo(220px, 200px);
+	}
 	
+	.nav-collapse {
+		margin-left: 30%;
+		.dropdown ul {
+			padding-left: 0;
+		}
+	}
+	 .header-nav {
+		position:relative;
+		z-index: 10002;
+		.nav {
+			@include buttonBackground($greenLight, $greenMedium);
+			@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px);
+			@include border-radius($blockGridImageCorner);
+			margin-right: 80px;
+		}
+	}
+	.nav > li > a {
+		padding: 12px;
+		text-shadow: none;
+	}
+	.dropdown-menu a {
+		text-shadow: none;
+	}
 }
 .navbar-inner {
 	min-height: 200px;
 	border: none;
-}
-.navbar .header-nav {
-	position:relative;
-	z-index: 10002;
-	.nav {
-		@include buttonBackground($greenLight, $greenMedium);
-		@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px);
-		@include border-radius($blockGridImageCorner);
-		margin-right: 80px;
-	}
-}
-.navbar-inner {
 	background: none;
-	background-image: none; 
-} 
-.navbar .brand {
-	position: absolute;
-	margin-top: -2px;
-	left: 0px;
-	@include logo(220px, 200px);
+	background-image: none;
 }
-.nav-collapse {
-	margin-left: 30%;
-	.dropdown ul {
-		padding-left: 0;
-	}
-} 
+
+
+
 
 /*-----------------------------------------
  SLIDESHOW
@@ -181,9 +195,11 @@ h4#site-subtitle {
  }
 }
 #footer-container {
- background: $footerBackgroundColor asset-url("footer-bg.gif",image) repeat-x -20px left;
+ //background: $footerBackgroundColor asset-url("footer-bg.gif",image) repeat-x -20px left;
 }
-
+#copyright {
+	background: transparent; 
+}
 
  /* RESPONSIVE CSS
     -------------------------------------------------- */

@@ -7226,22 +7226,31 @@ a:focus {
 /*-----------------------------------------
  TYPOGRAPHY 
 ----------------------------------------- */
+/* line 85, ../../app/assets/stylesheets/public.css.scss */
+.btn-primary {
+  color: #555555;
+}
+/* line 87, ../../app/assets/stylesheets/public.css.scss */
+.btn-primary:hover {
+  color: black;
+}
+
 /*-----------------------------------------
  STRUCTURAL LAYOUT 
 ----------------------------------------- */
-/* line 88, ../../app/assets/stylesheets/public.css.scss */
+/* line 94, ../../app/assets/stylesheets/public.css.scss */
 body {
   text-shadow: 0px 1px 0 #bf6e06;
   background: #ff9900 url(/assets/bg.png) repeat-x top left;
 }
 
-/* line 92, ../../app/assets/stylesheets/public.css.scss */
+/* line 98, ../../app/assets/stylesheets/public.css.scss */
 #content-container {
   margin-top: -80px;
   padding-bottom: 34px;
 }
 
-/* line 96, ../../app/assets/stylesheets/public.css.scss */
+/* line 102, ../../app/assets/stylesheets/public.css.scss */
 #main-column {
   width: 60%;
   margin-left: 30%;
@@ -7250,31 +7259,57 @@ body {
 /*-----------------------------------------
  HEADER
 ----------------------------------------- */
-/* line 104, ../../app/assets/stylesheets/public.css.scss */
+/* line 110, ../../app/assets/stylesheets/public.css.scss */
 h4#site-subtitle {
   position: absolute;
   bottom: 10px;
   left: 220px;
 }
 
-/* line 109, ../../app/assets/stylesheets/public.css.scss */
+/* line 115, ../../app/assets/stylesheets/public.css.scss */
 .navbar {
   border-top: 6px solid #14a958;
   min-height: 200px;
 }
-
-/* line 114, ../../app/assets/stylesheets/public.css.scss */
-.navbar-inner {
-  min-height: 200px;
-  border: none;
-}
-
 /* line 118, ../../app/assets/stylesheets/public.css.scss */
+.navbar .brand {
+  position: absolute;
+  margin-top: -2px;
+  left: 0px;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 220px;
+  height: 200px;
+  background: transparent url(/assets/logo.png) 0 0 no-repeat;
+  background-size: cover;
+  float: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-1ca52550f50d/gko_core/app/assets/stylesheets/gko/_mixins.scss */
+.navbar .brand a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 125, ../../app/assets/stylesheets/public.css.scss */
+.navbar .nav-collapse {
+  margin-left: 30%;
+}
+/* line 127, ../../app/assets/stylesheets/public.css.scss */
+.navbar .nav-collapse .dropdown ul {
+  padding-left: 0;
+}
+/* line 131, ../../app/assets/stylesheets/public.css.scss */
 .navbar .header-nav {
   position: relative;
   z-index: 10002;
 }
-/* line 121, ../../app/assets/stylesheets/public.css.scss */
+/* line 134, ../../app/assets/stylesheets/public.css.scss */
 .navbar .header-nav .nav {
   background-color: #14c160;
   background-image: -moz-linear-gradient(top, #15d166, #14a958);
@@ -7308,52 +7343,28 @@ h4#site-subtitle {
   background-color: #0f7b40 \9;
   /* IE6-9 */
 }
+/* line 141, ../../app/assets/stylesheets/public.css.scss */
+.navbar .nav > li > a {
+  padding: 12px;
+  text-shadow: none;
+}
+/* line 145, ../../app/assets/stylesheets/public.css.scss */
+.navbar .dropdown-menu a {
+  text-shadow: none;
+}
 
-/* line 128, ../../app/assets/stylesheets/public.css.scss */
+/* line 149, ../../app/assets/stylesheets/public.css.scss */
 .navbar-inner {
+  min-height: 200px;
+  border: none;
   background: none;
   background-image: none;
-}
-
-/* line 132, ../../app/assets/stylesheets/public.css.scss */
-.navbar .brand {
-  position: absolute;
-  margin-top: -2px;
-  left: 0px;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  width: 220px;
-  height: 200px;
-  background: transparent url(/assets/logo.png) 0 0 no-repeat;
-  background-size: cover;
-  float: none;
-  margin: 0 auto;
-  cursor: pointer;
-}
-/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-1ca52550f50d/gko_core/app/assets/stylesheets/gko/_mixins.scss */
-.navbar .brand a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 138, ../../app/assets/stylesheets/public.css.scss */
-.nav-collapse {
-  margin-left: 30%;
-}
-/* line 140, ../../app/assets/stylesheets/public.css.scss */
-.nav-collapse .dropdown ul {
-  padding-left: 0;
 }
 
 /*-----------------------------------------
  SLIDESHOW
 ----------------------------------------- */
-/* line 148, ../../app/assets/stylesheets/public.css.scss */
+/* line 162, ../../app/assets/stylesheets/public.css.scss */
 .image-large-wrapper {
   border: 8px solid #feecad;
   -webkit-box-shadow: black 0px 10px 10px -10px;
@@ -7364,13 +7375,13 @@ h4#site-subtitle {
   border-radius: 6px;
 }
 
-/* line 153, ../../app/assets/stylesheets/public.css.scss */
+/* line 167, ../../app/assets/stylesheets/public.css.scss */
 .carousel {
   margin-bottom: 40px;
   max-width: 600px;
 }
 
-/* line 157, ../../app/assets/stylesheets/public.css.scss */
+/* line 171, ../../app/assets/stylesheets/public.css.scss */
 .carousel-inner {
   border: 8px solid #feecad;
   -webkit-box-shadow: black 0px 10px 10px -10px;
@@ -7384,7 +7395,7 @@ h4#site-subtitle {
 /*-----------------------------------------
  FOOTER
 ----------------------------------------- */
-/* line 167, ../../app/assets/stylesheets/public.css.scss */
+/* line 181, ../../app/assets/stylesheets/public.css.scss */
 #partners-container {
   background: white;
   padding-top: 14px;
@@ -7401,19 +7412,19 @@ h4#site-subtitle {
   float: none;
   padding: 10px 10px 11px;
 }
-/* line 174, ../../app/assets/stylesheets/public.css.scss */
+/* line 188, ../../app/assets/stylesheets/public.css.scss */
 #partners-container ul li {
   display: block;
   margin-left: 12px;
 }
-/* line 177, ../../app/assets/stylesheets/public.css.scss */
+/* line 191, ../../app/assets/stylesheets/public.css.scss */
 #partners-container ul li:first-child {
   margin-left: 0px;
 }
 
-/* line 183, ../../app/assets/stylesheets/public.css.scss */
-#footer-container {
-  background: #bf2922 url(/assets/footer-bg.gif) repeat-x -20px left;
+/* line 200, ../../app/assets/stylesheets/public.css.scss */
+#copyright {
+  background: transparent;
 }
 
 /* RESPONSIVE CSS
@@ -8820,13 +8831,13 @@ h4#site-subtitle {
   }
 }
 @media (max-width: 980px) {
-  /* line 193, ../../app/assets/stylesheets/public.css.scss */
+  /* line 209, ../../app/assets/stylesheets/public.css.scss */
   .navbar .brand {
     width: 110px;
     height: 100px;
   }
 
-  /* line 197, ../../app/assets/stylesheets/public.css.scss */
+  /* line 213, ../../app/assets/stylesheets/public.css.scss */
   #main-column {
     width: 100%;
     margin-left: 0;
