@@ -1,4 +1,4 @@
-<% cache([site, I18n.locale, 'footer']) do %>
+<% cache([site, I18n.locale, 'footerv3']) do %>
 <!-- Footer
 ================================================== -->
 
@@ -21,15 +21,13 @@ end
   </div> 
 </div> 
 <% end %> 
-<% if @pipe_menu %>
 <div id='footer-container' class='container-fluid'>
   <div id='footer' class='row-fluid'>
     <div class="span12">
       <div class="footer-row-inner">
-        <%= render '/shared/menu', :sections => @pipe_menu, :menu_name => "pipe" %>
+        <%= render_menu('pipe') %>
       </div>
     </div>
   </div>
 </div>
-<% end %>
 <% end %>

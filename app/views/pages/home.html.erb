@@ -1,9 +1,10 @@
-<% cache [action_name, I18n.locale, resource.site, resource] do %>
+
+<% content_for :page_content do %>
+<% cache [I18n.locale, resource.site, resource, 'home-v2'] do %>
 <%
 @artists = site.sections.named("artists").first.children
 @features ||= site.features.live 
 %>
-<% content_for :page_content do %>
   <% if @features.any? %>
   <div class="row-fluid">
     <section class="span12">

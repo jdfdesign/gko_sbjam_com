@@ -7251,9 +7251,8 @@ body {
 }
 
 /* line 102, ../../app/assets/stylesheets/public.css.scss */
-#main-column {
-  width: 60%;
-  margin-left: 30%;
+#main-row {
+  max-width: 620px;
 }
 
 /*-----------------------------------------
