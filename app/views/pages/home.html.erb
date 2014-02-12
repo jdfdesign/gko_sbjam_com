@@ -24,7 +24,7 @@
       <% @artists.each do |artist| %>
         <div class="col-xs-12 col-sm-4">
           <%= link_to(artist.public_url, :class => :thumbnail) do %>
-            <%= image_fu(artist.thumbnail, site.preferred_image_grid_size) %>
+            <%= image_fu(artist.thumbnail, '312x208#') %>
             <div class="caption"><h3><%= artist.title %></h3></div>
           <% end if artist.thumbnail %>
         </div>
