@@ -1,0 +1,15 @@
+.copy-text {
+  ul { 
+    list-style: disc outside; 
+    margin-left: 30px; 
+  }
+  ol { 
+    margin-left: 30px; 
+  }
+	table {
+    @extend .table;
+  }
+  p {
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,31 @@
+<head>
+	<meta charset='utf8'>
+	<%= raw %(<meta name="google-site-verification" content="#{site.google_webmaster_tools_key}" />) if site.google_webmaster_tools_key.present? -%>
+	<title><%= @meta_title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<%= raw %(<meta name="description" content="#{@meta_description}" />) if @meta_description.present? -%>
+	<%= raw %(<meta name="robots" content="#{@meta_robots}" />) if @meta_robots.present? -%> 
+  <%= raw %(<link rel="canonical" content="#{@canonical}" />) if @canonical.present? -%>
+  <% @alternate_links.each do |link| %> 
+    <%= raw link %> 
+  <% end if @alternate_links.present? %>
+	<%= yield :meta %>                                                
+	<!-- Le styles -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Raleway:300,700' rel='stylesheet' type='text/css'> --> 
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<% if site.has_plugin?(:themes) and site.has_theme? %>
+    <%= theme_stylesheet_link_tag "public" %>
+	<% else %>
+    <%= stylesheet_link_tag "public" %>
+	<% end %>
+  <%= raw %(<style type='text/css' media='all'>#{site.stylesheet}</style>) if site.stylesheet? -%>
+	<!-- Le fav and touch icons -->
+	<link rel="shortcut icon" href="/favicon.ico">
+	<!-- <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-touch-icon-114x114.png"> -->
+  <%= render "typekit" %>
+  <%= csrf_meta_tags if site.authenticity_token_on_frontend -%>
+	<%= yield :head %>
+	<%= javascript_include_tag "modernizr-2.6.2-respond-1.1.0.min" %>
+</head>

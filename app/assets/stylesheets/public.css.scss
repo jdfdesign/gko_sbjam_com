@@ -1,217 +1,172 @@
-$greenLight: #15D166;
-$greenMedium: #14A958;
-$greenDark: #06592c;
-$redMedium: #BF2922;
-$redDark: #610905;
-$global-radii-blocks: 4px;
+$th-brand-logo-height: 124px;
+$th-green-light: #15D166;
+$th-green-medium: #14A958;
+$th-green-dark: #06592c;
+$th-red-medium: #BF2922;
+$th-red-dark: #610905;
 
-// Layout 
-$containerMaxWidth: 0; 
-$rowMaxWidth: 980px;
-
-$bodyBackgroundColor: #ff9900;
-$contentBackgroundColor: transparent;
-$footerBackgroundColor: $redMedium;
-$copyrightBackgroundColor: $footerBackgroundColor;
-$mainBackgroundColor: transparent;
-$sidebarBackgroundColor: transparent;
-
-// Typography
-$baseFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$baseFontSize: 14px;
-$baseLineHeight: 20px;
-$textColor: white;
-$headingFontFamily: $baseFontFamily;
-$headingTextColor: $textColor;
-
-
-// Links
-$linkColor: $textColor;
-$linkColorHover: $greenDark;
-$linkColorActive: $greenDark;
-
-// Header links
-$headerLinkColor: $linkColor;
-$headerLinkColorHover: $linkColorHover;
-$headerLinkColorActive: $linkColorActive;
-
-// Footer links
-$footerLinkColor: white;
-$footerLinkColorHover: $redDark;
-$footerLinkColorActive: $redDark;
-$footerResponsiveLinkBorder:$redDark;
- 
-// Navbar
-$navbarBackgroundHighlight: $bodyBackgroundColor;
-$navbarBackground: $bodyBackgroundColor;
-$navbarText: $textColor;
-$navbarLinkColor: white;
-$navbarLinkColorHover: $linkColorHover;
-$navbarLinkColorActive: $linkColorHover; 
-$navbarButtonBackgroundHighlight: $greenLight; 
-$navbarButtonBackground: $greenMedium; 
-$navbarButtonIconBarColor: white;
-$navbarResponsiveLinkBorder: $greenDark;
-$navbarDropdownBackground: $greenMedium;  
-// Form
-$inputTextColor: $textColor;
-$inputBackgroundColor: $bodyBackgroundColor;
-$inputBorderColor: $textColor;
-$inputFocusBorderColor: rgba(82, 168, 236, 0.8); 
-$inputBorderRadius: 3px;
-
-// Grid 
-$blockGridBackgroundColor: transparent;
-$blockGridImageBackgroundColor: #feecad; 
-$blockGridImageBorder: 8px solid #feecad; 
-$blockGridImageCorner: 6px;
-
-
-@import "gko_public_all"; 
-@import "flexslider/flexslider"; 
-
-/*-----------------------------------------
-   SHARED STYLES 
------------------------------------------ */
-
-.btn:focus,
-a:focus {
-  outline: 0;
+/* THEME MIXINS
+-------------------------------------------------- */
+@mixin center-nav {
+	@include clearfix();
+	text-align:center;
+	margin: 0;
+	width: 100%;
+	> li {
+		text-align:center;
+		float:none;
+		display:inline-block;
+	}
 }
 
-/*-----------------------------------------
- TYPOGRAPHY 
------------------------------------------ */
-.btn-primary {
-	color: $gray;
-	&:hover {
-		color: $black;
-	};
+@import "theme/variables";
+@import "bootstrap.3.0.3/bootstrap";
+@import "flexslider/flexslider";
+@import "theme/contact";
+//@import "font-awesome";
+//@import "theme/effects";
+//@import "theme/type";
+//@import "theme/navbar";
+//@import "theme/footer";
+//@import "theme/form";
+//@import "theme/carousel";
+//@import "theme/home";
+
+/* FIX FOR IE DEVICE_WIDTH BUG
+-------------------------------------------------- */
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+// Color for the placeholder plugin
+.placeholder {
+  color: $input-color-placeholder;
 }
-/*-----------------------------------------
- STRUCTURAL LAYOUT 
------------------------------------------ */
+
+/* FIX FOR GMAP BUG
+-------------------------------------------------- */
+#map-canvas {
+  height: 350px;
+  width: 100%;
+  @include box-sizing(content-box);
+  margin-bottom: $line-height-computed;
+  img {
+    max-width: none;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+  }
+}
+
 body {
- text-shadow: 0px 1px 0 #bf6e06;
- background: $bodyBackgroundColor asset-url("bg.png",image) repeat-x top left; 
-}
-#content-container {
-	margin-top: -80px;
-	padding-bottom: 34px; 
-}
-#main-row {
- max-width: 620px;
- 
+  border-top: 6px solid $th-green-medium; // like .navbar-nav background-color
+ // text-shadow: 0px 1px 0 #000;
+  background: $body-bg asset-url("bg.png",image) repeat-x top left; 
 }
 
-/*-----------------------------------------
- HEADER
------------------------------------------ */
-h4#site-subtitle {
-	position: absolute;
-	bottom: 10px;
-	left: 220px;
-}
-.navbar {
-	border-top: 6px solid $greenMedium;
-	min-height: 200px;
-	.brand {
-		position: absolute;
-		margin-top: -2px;
-		left: 0px;
-		@include logo(220px, 200px);
-	}
-	
-	.nav-collapse {
-		margin-left: 30%;
-		.dropdown ul {
-			padding-left: 0;
-		}
-	}
-	 .header-nav {
-		position:relative;
-		z-index: 10002;
-		.nav {
-			@include buttonBackground($greenLight, $greenMedium);
-			@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px);
-			@include border-radius($blockGridImageCorner);
-			margin-right: 80px;
-		}
-	}
-	.nav > li > a {
-		padding: 12px;
-		text-shadow: none;
-	}
-	.dropdown-menu a {
-		text-shadow: none;
-	}
-}
-.navbar-inner {
-	min-height: 200px;
-	border: none;
-	background: none;
-	background-image: none;
+.main-content {
+  .container {
+    @include container-fixed();
+
+    @media (min-width: $screen-sm) {
+      width: 620px;
+    }
+    @media (min-width: $screen-md) {
+      width: 620px;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 620px;
+    }
+  }
 }
 
-
-
-
-/*-----------------------------------------
- SLIDESHOW
------------------------------------------ */
-.image-large-wrapper {
-	border: $blockGridImageBorder; 
-	@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px); 
-	@include border-radius($blockGridImageCorner);
-}
 .carousel {
-	margin-bottom: $baseLineHeight * 2;
-	max-width: 600px;
-}
-.carousel-inner {
-	border: $blockGridImageBorder;
+	border: 6px solid #fff;
 	@include box-shadow(rgba(0,0,0,1) 0px 10px 10px -10px);
-	@include border-radius($blockGridImageCorner);
+  border-radius: 4px;
 }
 
-/*-----------------------------------------
- FOOTER
------------------------------------------ */ 
+/* CUSTOMIZE THE THUMBNAIL
+-------------------------------------------------- */ 
 
-#partners-container {
+.thumbnail {
+  h3 {
+    font-size: $font-size-base;
+  }
+  a {
+    color: #000;
+  }
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */ 
+
+.navbar-brand {
+  max-width: 240px;
+  padding-top: 20px + ($navbar-height - $th-brand-logo-height)/2;
+  padding-bottom: ($navbar-height - $th-brand-logo-height)/2;
+  @media (min-width: $grid-float-breakpoint) {
+    max-width: none;
+    padding-top: ($navbar-height - $th-brand-logo-height)/2;
+  }
+}
+
+.navbar-nav {
+  margin-top: -1px;
+  background-color: $th-green-medium;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+@media (min-width: $grid-float-breakpoint) {
+  .navbar-collapse {
+    max-height: 60px;
+  }
+  .navbar-nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* FOOTER
+-------------------------------------------------- */ 
+
+#partners {
  background: white; 
  padding-top:14px;
  padding-bottom:14px;
- text-align: center;
- ul {
-	@include horizontal-list;
-	li { 
-		display: block;
-		margin-left: 12px;
-		&:first-child {
-			 margin-left: 0px;
-		}
-	}
- }
 }
-#footer-container {
- //background: $footerBackgroundColor asset-url("footer-bg.gif",image) repeat-x -20px left;
-}
+
+/* COPYRIGHT
+-------------------------------------------------- */
 #copyright {
-	background: transparent; 
+  background-color: $th-red-medium;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed; 
+  p {
+     font-size: 11px;
+     margin-bottom: 0;
+  }
+  .nav {
+    > li {
+      float: left;
+      margin-right: 15px;
+    }
+    > li > a {
+      
+      font-size: 11px;
+      padding: 0;
+      &:hover {
+        color: $brand-primary;
+        background-color: transparent;
+      }
+    }
+  }
 }
 
- /* RESPONSIVE CSS
-    -------------------------------------------------- */
-@import "twitter/bootstrap/responsive";
 
-@media (max-width: 980px) {
-	.navbar .brand {
-		width: 110px;
-		height: 100px;
-	}
-	#main-column {
-	 width: 100%;
-	 margin-left: 0;
-	} 
+.copyright-author {
+ 	background: transparent image-url('gko/logo_gecko_black.png') center left no-repeat;
+ 	padding-left: 28px;
 }

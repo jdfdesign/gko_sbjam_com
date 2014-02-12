@@ -1,0 +1,47 @@
+#footer {
+  background-color: $theme-color;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: $line-height-computed;
+  h1 {
+    color: #fff;
+  }
+}
+/* COPYRIGHT
+-------------------------------------------------- */
+#copyright {
+  background-color: $theme-secondary-color;
+  color: $gray-light;
+  padding-top: $line-height-computed;
+  padding-bottom: $line-height-computed; 
+  p {
+     color: #989898;
+     font-size: 11px;
+     margin-bottom: 0;
+  }
+  .nav {
+    > li {
+      float: left;
+      margin-right: 15px;
+    }
+    > li > a {
+      color: #989898;
+      font-size: 11px;
+      padding: 0;
+      &:hover {
+        color: $brand-primary;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+.copyright-author {
+ 	background: transparent image-url('gko/logo_gecko_white.png') center left no-repeat;
+ 	padding-left: 28px;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}

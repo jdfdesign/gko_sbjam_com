@@ -1,0 +1,109 @@
+/* HOME
+-------------------------------------------------- */
+section h1 {
+  margin-top: 0;
+}
+#main-carousel { 
+  
+  background-color: $theme-secondary-color; 
+  color: #fff;
+  border-bottom: 8px solid #fff;
+  .item {
+    padding: 8em 2em;
+    
+    h2 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  .item > img, 
+  .carousel-inner > .item > a > img {
+    width: 100%; 
+    max-height: 100%;
+  }
+  
+  // Toggles
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width:  90px;
+    height: 90px;
+    margin-top: -45px;
+    margin-left: -45px;
+    font-family: serif;
+    font-size: 90px;
+    border: 1px solid #fff;
+    line-height: 75px;
+  }
+  .carousel-control {
+    &.right,
+    &.left {
+      background-image: none;
+      @include reset-filter();   
+    }
+  }
+
+} 
+.carousel-caption {
+  background-color: $brand-primary;
+}
+#recent-works {
+  background-color: $body-bg; 
+  padding-top: $line-height-computed * 4;
+  padding-bottom: $line-height-computed * 4;
+  .intro {
+    padding-bottom: $line-height-computed * 2; 
+  }
+  .more-projects-row {
+     padding-top: $line-height-computed * 2;
+     padding-bottom: 0;
+  }
+}
+#services-section {
+  padding-top: $line-height-computed * 2;
+  padding-bottom: $line-height-computed * 2;
+  background-color: $theme-secondary-color;
+}
+#services-accordion {
+  .panel-heading { 
+    padding: 0;
+    > a {
+      padding: $line-height-computed 15px;
+      display: block;
+      background-color: $brand-primary;
+      text-decoration: none;
+      font-size: $font-size-large;
+      color: $text-color;
+      .icon-plus {
+        display: none;
+      }
+      .icon-minus {
+        display: block;
+      }
+    }
+    > a.collapsed { 
+      background-color: $panel-default-heading-bg;
+      //color: $brand-primary;
+      @include transition(all 0.3s ease-in-out); 
+      .icon-plus {
+        display: block;
+      }
+      .icon-minus {
+        display: none;
+      }
+      &:hover {
+        background-color: $brand-primary;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+  .panel {
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+  .panel + .panel {
+    margin-top: 0;
+  }
+}

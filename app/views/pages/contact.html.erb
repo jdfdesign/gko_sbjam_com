@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="page-header">
+        <%= render_page_title(resource.title) %>
+      </div>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-5">
+      <%= render_copy_text(resource.body) %>
+    </div>
+    <div class="col-xs-12 col-md-7">
+      <form id="contact-form" action="/inquiries" method="post" data-remote="true">
+         <input type="text" name="inquiry[ghost]" id="inquiry_ghost" value="" class="form-control hide"> 
+        <div class="row">	
+          <div class="col-xs-12 form-group">
+            <input type="text" name="inquiry[name]" id="inquiry_name" value="" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.name') %>">
+          </div>
+          <div class="col-xs-12 form-group">
+            <input type="text" name="inquiry[email]" id="inquiry_email" value="" class="form-control required email" placeholder="<%= t('simple_form.labels.inquiry.email') %>">
+          </div>
+          <div class="col-xs-12 form-group">
+            <textarea name="inquiry[message]" id="inquiry_message" rows="20" cols="30" class="form-control required" placeholder="<%= t('simple_form.labels.inquiry.message') %>"></textarea>
+          </div>
+          <div class="col-xs-12 form-group">
+            <input type="hidden" name="submitted" id="submitted" class="button" value="SEND"><button id="submit" class="btn btn-primary btn-block" type="submit"><%= t("gko.inquiry_submit") %></button>
+          </div>
+          <div class="col-xs-12 form-group">
+            <p id="error" data-alert="" class="alert"><%= t("gko.inquiry_error") %></p>
+            <p id="thanks" data-alert="" class="alert alert-success"><%= t("gko.inquiry_thanks") %></p>
+            <p id="timedout" data-alert="" class="alert"><%= t("gko.inquiry_connection_time_out") %></p>
+            <p id="state" data-alert="" class="alert"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<%= render "google_map" %>

@@ -1,0 +1,50 @@
+.form-control {
+  @include box-shadow(none); 
+  @include transition(all 0.4s ease-in-out); 
+  &:focus {
+    border-color: none;
+    outline: 0;
+    @include box-shadow(none);
+    background: #e6e6e6;
+  } 
+}
+.form-group{
+  position: relative;
+}
+input {
+  font-weight: normal;
+}
+input[type="text"],
+input[type="email"] { 
+  margin-bottom: 15px;
+  height: $input-height-large;
+}
+textarea.form-control {
+  height: $input-height-large * 3; 
+  resize: none;
+}
+
+span.error,span.valid{
+  position: absolute;
+  top:0; 
+  right: 1em;
+}
+span.error, span.valid{ 
+  width: $line-height-computed * 2;
+  height: $line-height-computed * 2; 
+  background-position:center center;
+  background-size: $line-height-computed; 
+  background-repeat: no-repeat;
+}
+
+.alert{
+  display:none;
+  border: 0; 
+  border-radius: 0; 
+  background-color:#ff3333; 
+  color: #fff;
+}
+.alert-success{
+  background-color:#22b573; 
+  color: #fff;
+}
