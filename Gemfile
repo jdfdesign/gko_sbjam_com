@@ -6,7 +6,7 @@ group :assets do
   gem 'uglifier', '~> 2.4.0'
 end
 group :production do
-  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.09.rc24" do
+  git "git@github.com:jdfdesign/gko_cms3.git", :tag => "v0.8.09.rc25" do
     gem 'gko_core'
     gem 'gko_auth'
     gem 'gko_documents'

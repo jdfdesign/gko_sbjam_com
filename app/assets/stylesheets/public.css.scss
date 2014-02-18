@@ -23,14 +23,7 @@ $th-red-dark: #610905;
 @import "bootstrap.3.0.3/bootstrap";
 @import "flexslider/flexslider";
 @import "theme/contact";
-//@import "font-awesome";
-//@import "theme/effects";
-//@import "theme/type";
-//@import "theme/navbar";
-//@import "theme/footer";
-//@import "theme/form";
-//@import "theme/carousel";
-//@import "theme/home";
+@import "theme/type";
 
 /* FIX FOR IE DEVICE_WIDTH BUG
 -------------------------------------------------- */
@@ -40,29 +33,11 @@ $th-red-dark: #610905;
 @-o-viewport{width:device-width}
 @viewport{width:device-width}
 
-// Color for the placeholder plugin
-.placeholder {
-  color: $input-color-placeholder;
-}
-
-/* FIX FOR GMAP BUG
+/* LAYOUT
 -------------------------------------------------- */
-#map-canvas {
-  height: 350px;
-  width: 100%;
-  @include box-sizing(content-box);
-  margin-bottom: $line-height-computed;
-  img {
-    max-width: none;
-    vertical-align: middle;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-  }
-}
 
 body {
   border-top: 6px solid $th-green-medium; // like .navbar-nav background-color
- // text-shadow: 0px 1px 0 #000;
   background: $body-bg asset-url("bg.png",image) repeat-x top left; 
 }
 
@@ -97,6 +72,12 @@ body {
   }
   a {
     color: #000;
+  }
+}
+
+#artists {
+  .thumbnail {
+    min-height: 180px;
   }
 }
 
@@ -136,6 +117,9 @@ body {
  background: white; 
  padding-top:14px;
  padding-bottom:14px;
+ .thumbnail > img {
+   min-width: 80px;
+ }
 }
 
 /* COPYRIGHT

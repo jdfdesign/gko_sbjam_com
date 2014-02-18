@@ -330,8 +330,9 @@ table {
   }
 
   /* line 81, ../../app/assets/stylesheets/bootstrap.3.0.3/_print.scss */
-  .table td,
-  .table th {
+  .table td, .copy-text table td,
+  .table th,
+  .copy-text table th {
     background-color: #fff !important;
   }
 
@@ -347,7 +348,7 @@ table {
   }
 
   /* line 95, ../../app/assets/stylesheets/bootstrap.3.0.3/_print.scss */
-  .table {
+  .table, .copy-text table {
     border-collapse: collapse !important;
   }
 
@@ -1980,42 +1981,52 @@ th {
 }
 
 /* line 17, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table {
+.table, .copy-text table {
   width: 100%;
   margin-bottom: 20px;
 }
 /* line 26, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table > thead > tr > th,
+.table > thead > tr > th, .copy-text table > thead > tr > th,
 .table > thead > tr > td,
+.copy-text table > thead > tr > td,
 .table > tbody > tr > th,
+.copy-text table > tbody > tr > th,
 .table > tbody > tr > td,
+.copy-text table > tbody > tr > td,
 .table > tfoot > tr > th,
-.table > tfoot > tr > td {
+.copy-text table > tfoot > tr > th,
+.table > tfoot > tr > td,
+.copy-text table > tfoot > tr > td {
   padding: 8px;
   line-height: 1.42857;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
 /* line 35, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table > thead > tr > th {
+.table > thead > tr > th, .copy-text table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #dddddd;
 }
 /* line 45, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table > caption + thead > tr:first-child > th,
+.table > caption + thead > tr:first-child > th, .copy-text table > caption + thead > tr:first-child > th,
 .table > caption + thead > tr:first-child > td,
+.copy-text table > caption + thead > tr:first-child > td,
 .table > colgroup + thead > tr:first-child > th,
+.copy-text table > colgroup + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > td,
+.copy-text table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > th,
-.table > thead:first-child > tr:first-child > td {
+.copy-text table > thead:first-child > tr:first-child > th,
+.table > thead:first-child > tr:first-child > td,
+.copy-text table > thead:first-child > tr:first-child > td {
   border-top: 0;
 }
 /* line 51, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table > tbody + tbody {
+.table > tbody + tbody, .copy-text table > tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 /* line 56, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-.table .table {
+.table .table, .copy-text table .table, .table .copy-text table, .copy-text .table table, .copy-text table table {
   background-color: #ff9900;
 }
 
@@ -2075,15 +2086,23 @@ table th[class*="col-"] {
 }
 
 /* line 420, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
-.table > thead > tr > .active,
+.table > thead > tr > .active, .copy-text table > thead > tr > .active,
 .table > thead > .active > td,
+.copy-text table > thead > .active > td,
 .table > thead > .active > th,
+.copy-text table > thead > .active > th,
 .table > tbody > tr > .active,
+.copy-text table > tbody > tr > .active,
 .table > tbody > .active > td,
+.copy-text table > tbody > .active > td,
 .table > tbody > .active > th,
+.copy-text table > tbody > .active > th,
 .table > tfoot > tr > .active,
+.copy-text table > tfoot > tr > .active,
 .table > tfoot > .active > td,
-.table > tfoot > .active > th {
+.copy-text table > tfoot > .active > td,
+.table > tfoot > .active > th,
+.copy-text table > tfoot > .active > th {
   background-color: whitesmoke;
 }
 
@@ -2095,15 +2114,23 @@ table th[class*="col-"] {
 }
 
 /* line 420, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
-.table > thead > tr > .success,
+.table > thead > tr > .success, .copy-text table > thead > tr > .success,
 .table > thead > .success > td,
+.copy-text table > thead > .success > td,
 .table > thead > .success > th,
+.copy-text table > thead > .success > th,
 .table > tbody > tr > .success,
+.copy-text table > tbody > tr > .success,
 .table > tbody > .success > td,
+.copy-text table > tbody > .success > td,
 .table > tbody > .success > th,
+.copy-text table > tbody > .success > th,
 .table > tfoot > tr > .success,
+.copy-text table > tfoot > tr > .success,
 .table > tfoot > .success > td,
-.table > tfoot > .success > th {
+.copy-text table > tfoot > .success > td,
+.table > tfoot > .success > th,
+.copy-text table > tfoot > .success > th {
   background-color: #dff0d8;
 }
 
@@ -2115,15 +2142,23 @@ table th[class*="col-"] {
 }
 
 /* line 420, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
-.table > thead > tr > .danger,
+.table > thead > tr > .danger, .copy-text table > thead > tr > .danger,
 .table > thead > .danger > td,
+.copy-text table > thead > .danger > td,
 .table > thead > .danger > th,
+.copy-text table > thead > .danger > th,
 .table > tbody > tr > .danger,
+.copy-text table > tbody > tr > .danger,
 .table > tbody > .danger > td,
+.copy-text table > tbody > .danger > td,
 .table > tbody > .danger > th,
+.copy-text table > tbody > .danger > th,
 .table > tfoot > tr > .danger,
+.copy-text table > tfoot > tr > .danger,
 .table > tfoot > .danger > td,
-.table > tfoot > .danger > th {
+.copy-text table > tfoot > .danger > td,
+.table > tfoot > .danger > th,
+.copy-text table > tfoot > .danger > th {
   background-color: #f2dede;
 }
 
@@ -2135,15 +2170,23 @@ table th[class*="col-"] {
 }
 
 /* line 420, ../../app/assets/stylesheets/bootstrap.3.0.3/_mixins.scss */
-.table > thead > tr > .warning,
+.table > thead > tr > .warning, .copy-text table > thead > tr > .warning,
 .table > thead > .warning > td,
+.copy-text table > thead > .warning > td,
 .table > thead > .warning > th,
+.copy-text table > thead > .warning > th,
 .table > tbody > tr > .warning,
+.copy-text table > tbody > tr > .warning,
 .table > tbody > .warning > td,
+.copy-text table > tbody > .warning > td,
 .table > tbody > .warning > th,
+.copy-text table > tbody > .warning > th,
 .table > tfoot > tr > .warning,
+.copy-text table > tfoot > tr > .warning,
 .table > tfoot > .warning > td,
-.table > tfoot > .warning > th {
+.copy-text table > tfoot > .warning > td,
+.table > tfoot > .warning > th,
+.copy-text table > tfoot > .warning > th {
   background-color: #fcf8e3;
 }
 
@@ -2166,16 +2209,21 @@ table th[class*="col-"] {
     -webkit-overflow-scrolling: touch;
   }
   /* line 180, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-  .table-responsive > .table {
+  .table-responsive > .table, .copy-text .table-responsive > table {
     margin-bottom: 0;
   }
   /* line 189, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
-  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > thead > tr > th, .copy-text .table-responsive > table > thead > tr > th,
   .table-responsive > .table > thead > tr > td,
+  .copy-text .table-responsive > table > thead > tr > td,
   .table-responsive > .table > tbody > tr > th,
+  .copy-text .table-responsive > table > tbody > tr > th,
   .table-responsive > .table > tbody > tr > td,
+  .copy-text .table-responsive > table > tbody > tr > td,
   .table-responsive > .table > tfoot > tr > th,
-  .table-responsive > .table > tfoot > tr > td {
+  .copy-text .table-responsive > table > tfoot > tr > th,
+  .table-responsive > .table > tfoot > tr > td,
+  .copy-text .table-responsive > table > tfoot > tr > td {
     white-space: nowrap;
   }
   /* line 197, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
@@ -5412,7 +5460,7 @@ td.visible-print {
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 /* Browser Resets */
-/* line 18, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 18, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
@@ -5420,7 +5468,7 @@ td.visible-print {
   outline: none;
 }
 
-/* line 21, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 21, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -5431,32 +5479,32 @@ td.visible-print {
 
 /* FlexSlider Necessary Styles
 *********************************/
-/* line 25, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 25, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider {
   margin: 0;
   padding: 0;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 27, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 27, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-pauseplay span {
   text-transform: capitalize;
 }
 
 /* Clearfix for the .slides element */
-/* line 31, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 31, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .slides:after {
   content: ".";
   display: block;
@@ -5466,12 +5514,12 @@ td.visible-print {
   height: 0;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 32, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 html[xmlns] .slides {
   display: block;
 }
 
-/* line 33, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 33, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 * html .slides {
   height: 1%;
 }
@@ -5479,14 +5527,14 @@ html[xmlns] .slides {
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-/* line 38, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 38, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .no-js .slides > li:first-child {
   display: block;
 }
 
 /* FlexSlider Default Theme
 *********************************/
-/* line 43, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 43, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider {
   margin: 0 0 60px;
   background: #fff;
@@ -5503,7 +5551,7 @@ html[xmlns] .slides {
   zoom: 1;
 }
 
-/* line 44, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 44, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
@@ -5511,28 +5559,28 @@ html[xmlns] .slides {
   transition: all 1s ease;
 }
 
-/* line 45, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 45, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .loading .flex-viewport {
   max-height: 300px;
 }
 
-/* line 46, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 46, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider .slides {
   zoom: 1;
 }
 
-/* line 48, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 48, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .carousel li {
   margin-right: 5px;
 }
 
 /* Direction Nav */
-/* line 52, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 52, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav {
   *height: 0;
 }
 
-/* line 53, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 53, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav a {
   width: 30px;
   height: 30px;
@@ -5547,35 +5595,35 @@ html[xmlns] .slides {
   -webkit-transition: all .3s ease;
 }
 
-/* line 54, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 54, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav .flex-next {
   background-position: 100% 0;
   right: -36px;
 }
 
-/* line 55, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 55, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav .flex-prev {
   left: -36px;
 }
 
-/* line 56, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 56, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider:hover .flex-next {
   opacity: 0.8;
   right: 5px;
 }
 
-/* line 57, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 57, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider:hover .flex-prev {
   opacity: 0.8;
   left: 5px;
 }
 
-/* line 58, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 58, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
   opacity: 1;
 }
 
-/* line 59, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 59, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav .flex-disabled {
   opacity: 0.3 !important;
   filter: alpha(opacity=30);
@@ -5583,7 +5631,7 @@ html[xmlns] .slides {
 }
 
 /* Control Nav */
-/* line 62, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 62, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-nav {
   width: 100%;
   position: absolute;
@@ -5591,7 +5639,7 @@ html[xmlns] .slides {
   text-align: center;
 }
 
-/* line 63, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 63, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
@@ -5599,7 +5647,7 @@ html[xmlns] .slides {
   *display: inline;
 }
 
-/* line 64, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 64, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-paging li a {
   width: 11px;
   height: 11px;
@@ -5615,34 +5663,34 @@ html[xmlns] .slides {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 65, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 65, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 66, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 66, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-paging li a.flex-active {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
 
-/* line 68, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 68, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
   overflow: hidden;
 }
 
-/* line 69, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 69, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs li {
   width: 25%;
   float: left;
   margin: 0;
 }
 
-/* line 70, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 70, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs img {
   width: 100%;
   display: block;
@@ -5650,25 +5698,25 @@ html[xmlns] .slides {
   cursor: pointer;
 }
 
-/* line 71, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 71, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs img:hover {
   opacity: 1;
 }
 
-/* line 72, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 72, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
 }
 
 @media screen and (max-width: 860px) {
-  /* line 75, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+  /* line 75, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
   .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 0;
   }
 
-  /* line 76, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-4a84b0d46e3e/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+  /* line 76, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0;
@@ -5677,35 +5725,13 @@ html[xmlns] .slides {
 /* CONTACT STYLES
 -------------------------------------------------- */
 /* line 3, ../../app/assets/stylesheets/theme/_contact.scss */
-#contact {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #15d166;
-}
-/* line 7, ../../app/assets/stylesheets/theme/_contact.scss */
-#contact #submit {
-  background-color: #ff9900;
-  color: #15d166;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-weight: 400;
-  letter-spacing: 2px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-/* line 15, ../../app/assets/stylesheets/theme/_contact.scss */
-#contact #submit:hover {
-  background-color: #cc7a00;
-}
-
-/* line 20, ../../app/assets/stylesheets/theme/_contact.scss */
 .form-control {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 23, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 6, ../../app/assets/stylesheets/theme/_contact.scss */
 .form-control:focus {
   border-color: none;
   outline: 0;
@@ -5714,36 +5740,36 @@ html[xmlns] .slides {
   background: #e6e6e6;
 }
 
-/* line 30, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 13, ../../app/assets/stylesheets/theme/_contact.scss */
 .form-group {
   position: relative;
 }
 
-/* line 33, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 16, ../../app/assets/stylesheets/theme/_contact.scss */
 input {
   font-weight: normal;
 }
 
-/* line 36, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 19, ../../app/assets/stylesheets/theme/_contact.scss */
 input[type="text"] {
   margin-bottom: 15px;
   height: 46px;
 }
 
-/* line 40, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 23, ../../app/assets/stylesheets/theme/_contact.scss */
 textarea.form-control {
   height: 138px;
   resize: none;
 }
 
-/* line 44, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 27, ../../app/assets/stylesheets/theme/_contact.scss */
 span.error, span.valid {
   position: absolute;
   top: 0;
   right: 1em;
 }
 
-/* line 49, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 32, ../../app/assets/stylesheets/theme/_contact.scss */
 span.error, span.valid {
   width: 40px;
   height: 40px;
@@ -5752,17 +5778,17 @@ span.error, span.valid {
   background-repeat: no-repeat;
 }
 
-/* line 56, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 39, ../../app/assets/stylesheets/theme/_contact.scss */
 span.error {
   background-image: "/assets/notifications/error.svg";
 }
 
-/* line 59, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 42, ../../app/assets/stylesheets/theme/_contact.scss */
 span.valid {
   background-image: "/assets/notifications/valid.svg";
 }
 
-/* line 63, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 46, ../../app/assets/stylesheets/theme/_contact.scss */
 .alert {
   display: none;
   border: 0;
@@ -5771,10 +5797,24 @@ span.valid {
   color: #fff;
 }
 
-/* line 70, ../../app/assets/stylesheets/theme/_contact.scss */
+/* line 53, ../../app/assets/stylesheets/theme/_contact.scss */
 .alert-success {
   background-color: #22b573;
   color: #fff;
+}
+
+/* line 2, ../../app/assets/stylesheets/theme/_type.scss */
+.copy-text ul {
+  list-style: disc outside;
+  margin-left: 30px;
+}
+/* line 6, ../../app/assets/stylesheets/theme/_type.scss */
+.copy-text ol {
+  margin-left: 30px;
+}
+/* line 12, ../../app/assets/stylesheets/theme/_type.scss */
+.copy-text p {
+  font-weight: 300;
 }
 
 /* FIX FOR IE DEVICE_WIDTH BUG
@@ -5799,37 +5839,15 @@ span.valid {
   width: device-width;
 }
 
-/* line 44, ../../app/assets/stylesheets/public.css.scss */
-.placeholder {
-  color: #999999;
-}
-
-/* FIX FOR GMAP BUG
+/* LAYOUT
 -------------------------------------------------- */
-/* line 50, ../../app/assets/stylesheets/public.css.scss */
-#map-canvas {
-  height: 350px;
-  width: 100%;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  margin-bottom: 20px;
-}
-/* line 55, ../../app/assets/stylesheets/public.css.scss */
-#map-canvas img {
-  max-width: none;
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-/* line 63, ../../app/assets/stylesheets/public.css.scss */
+/* line 39, ../../app/assets/stylesheets/public.css.scss */
 body {
   border-top: 6px solid #14a958;
   background: #ff9900 url(/assets/bg.png) repeat-x top left;
 }
 
-/* line 70, ../../app/assets/stylesheets/public.css.scss */
+/* line 45, ../../app/assets/stylesheets/public.css.scss */
 .main-content .container {
   margin-right: auto;
   margin-left: auto;
@@ -5846,25 +5864,25 @@ body {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 70, ../../app/assets/stylesheets/public.css.scss */
+  /* line 45, ../../app/assets/stylesheets/public.css.scss */
   .main-content .container {
     width: 620px;
   }
 }
 @media (min-width: 992px) {
-  /* line 70, ../../app/assets/stylesheets/public.css.scss */
+  /* line 45, ../../app/assets/stylesheets/public.css.scss */
   .main-content .container {
     width: 620px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 70, ../../app/assets/stylesheets/public.css.scss */
+  /* line 45, ../../app/assets/stylesheets/public.css.scss */
   .main-content .container {
     width: 620px;
   }
 }
 
-/* line 85, ../../app/assets/stylesheets/public.css.scss */
+/* line 60, ../../app/assets/stylesheets/public.css.scss */
 .carousel {
   border: 6px solid #fff;
   -webkit-box-shadow: black 0px 10px 10px -10px;
@@ -5874,32 +5892,37 @@ body {
 
 /* CUSTOMIZE THE THUMBNAIL
 -------------------------------------------------- */
-/* line 95, ../../app/assets/stylesheets/public.css.scss */
+/* line 70, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail h3 {
   font-size: 14px;
 }
-/* line 98, ../../app/assets/stylesheets/public.css.scss */
+/* line 73, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail a {
   color: #000;
 }
 
+/* line 79, ../../app/assets/stylesheets/public.css.scss */
+#artists .thumbnail {
+  min-height: 180px;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-/* line 106, ../../app/assets/stylesheets/public.css.scss */
+/* line 87, ../../app/assets/stylesheets/public.css.scss */
 .navbar-brand {
   max-width: 240px;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 @media (min-width: 768px) {
-  /* line 106, ../../app/assets/stylesheets/public.css.scss */
+  /* line 87, ../../app/assets/stylesheets/public.css.scss */
   .navbar-brand {
     max-width: none;
     padding-top: 10px;
   }
 }
 
-/* line 116, ../../app/assets/stylesheets/public.css.scss */
+/* line 97, ../../app/assets/stylesheets/public.css.scss */
 .navbar-nav {
   margin-top: -1px;
   background-color: #14a958;
@@ -5908,12 +5931,12 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 123, ../../app/assets/stylesheets/public.css.scss */
+  /* line 104, ../../app/assets/stylesheets/public.css.scss */
   .navbar-collapse {
     max-height: 60px;
   }
 
-  /* line 126, ../../app/assets/stylesheets/public.css.scss */
+  /* line 107, ../../app/assets/stylesheets/public.css.scss */
   .navbar-nav > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -5921,43 +5944,47 @@ body {
 }
 /* FOOTER
 -------------------------------------------------- */
-/* line 135, ../../app/assets/stylesheets/public.css.scss */
+/* line 116, ../../app/assets/stylesheets/public.css.scss */
 #partners {
   background: white;
   padding-top: 14px;
   padding-bottom: 14px;
 }
+/* line 120, ../../app/assets/stylesheets/public.css.scss */
+#partners .thumbnail > img {
+  min-width: 80px;
+}
 
 /* COPYRIGHT
 -------------------------------------------------- */
-/* line 143, ../../app/assets/stylesheets/public.css.scss */
+/* line 127, ../../app/assets/stylesheets/public.css.scss */
 #copyright {
   background-color: #bf2922;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 147, ../../app/assets/stylesheets/public.css.scss */
+/* line 131, ../../app/assets/stylesheets/public.css.scss */
 #copyright p {
   font-size: 11px;
   margin-bottom: 0;
 }
-/* line 152, ../../app/assets/stylesheets/public.css.scss */
+/* line 136, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li {
   float: left;
   margin-right: 15px;
 }
-/* line 156, ../../app/assets/stylesheets/public.css.scss */
+/* line 140, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li > a {
   font-size: 11px;
   padding: 0;
 }
-/* line 160, ../../app/assets/stylesheets/public.css.scss */
+/* line 144, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li > a:hover {
   color: #15d166;
   background-color: transparent;
 }
 
-/* line 169, ../../app/assets/stylesheets/public.css.scss */
+/* line 153, ../../app/assets/stylesheets/public.css.scss */
 .copyright-author {
   background: transparent url(/assets/gko/logo_gecko_black.png) center left no-repeat;
   padding-left: 28px;

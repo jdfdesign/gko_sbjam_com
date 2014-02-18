@@ -7,7 +7,31 @@
   <% if @features.any? %>
     <div class="row">
       <div class="col-xs-12">
-        <%= render 'shared/carousel', :features => @features %>
+        <% rand_id = "carousel_#{rand(10000)}" %>
+        <div class="carousel slide" id="<%= rand_id %>" data-interval="<%= site.carousel_interval * 1000 %>">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <% @features.each_with_index do |feature, index| %>
+                <div class="item <%= 'active' if index == 0 %>">
+                  <% if image = feature.thumbnail("800x600#") %>
+                      <%= image_tag(image.url) %>
+                  <% end %>
+                  <% if feature.title.present? || feature.body.present? %>
+                      <div class="carousel-caption"><p>
+                        <%= "<strong>#{feature.title}</strong> ".html_safe if feature.title.present? %>
+                        <%= "#{feature.body}".html_safe if feature.body.present? %>
+                        <% if feature.owner and url = feature.owner.public_url %>
+                            <%= link_to(t("features.view_more"), url, :class => 'btn inline features') %>
+                        <% end %></p>
+                      </div>
+                  <% end %>
+                </div>
+            <% end %>
+          </div>
+          <!-- Carousel nav -->
+          <a class="left carousel-control" href="#<%= rand_id %>" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#<%= rand_id %>" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></i></a>
+        </div>
       </div>
     </div> 
   <% end %>
