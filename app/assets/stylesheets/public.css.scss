@@ -38,7 +38,7 @@ $th-red-dark: #610905;
 
 body {
   border-top: 6px solid $th-green-medium; // like .navbar-nav background-color
-  background: $body-bg asset-url("bg.png",image) repeat-x top left; 
+  background: $body-bg asset-url("bg-red.jpg",image) repeat-x top left; 
 }
 
 .main-content {
@@ -69,15 +69,19 @@ body {
 .thumbnail {
   h3 {
     font-size: $font-size-base;
+    margin: 0 !important;
+    text-align: center;
   }
   a {
     color: #000;
   }
+  
+  
 }
 
 #artists {
   .thumbnail {
-    min-height: 180px;
+    //min-height: 180px;
   }
 }
 
@@ -98,7 +102,7 @@ body {
   margin-top: -1px;
   background-color: $th-green-medium;
   border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  float: right;
 }
 @media (min-width: $grid-float-breakpoint) {
   .navbar-collapse {
@@ -110,6 +114,18 @@ body {
   }
 }
 
+.shared {
+  background-color: #3b579d;
+  float: right;
+  display: block;
+  min-height: 60px;
+  min-width: 60px;
+  margin-top: -1px;
+  border-bottom-right-radius: 8px;
+  a {
+    display: block;
+  }
+}
 /* FOOTER
 -------------------------------------------------- */ 
 
@@ -125,7 +141,7 @@ body {
 /* COPYRIGHT
 -------------------------------------------------- */
 #copyright {
-  background-color: $th-red-medium;
+  //background-color: $body-bg;
   padding-top: $line-height-computed;
   padding-bottom: $line-height-computed; 
   p {

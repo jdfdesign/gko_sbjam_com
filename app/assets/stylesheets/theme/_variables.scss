@@ -27,7 +27,7 @@ $brand-info:            #5bc0de;
 // Scaffolding
 // -------------------------
 
-$body-bg:               #ff9900;//#fff;
+$body-bg:               #e80d0d;//#fff;
 $text-color:            #fff;//$gray-dark;
 
 // Links
@@ -250,7 +250,7 @@ $grid-gutter-width:         30px;
 // Navbar collapse
 
 // Point at which the navbar becomes uncollapsed
-$grid-float-breakpoint:     $screen-sm-min;
+$grid-float-breakpoint:     $screen-md-min;//$screen-sm-min;
 // Point at which the navbar begins collapsing
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
@@ -285,8 +285,8 @@ $navbar-default-brand-hover-bg:            transparent;
 
 // Navbar toggle
 $navbar-default-toggle-hover-bg:           $navbar-default-bg;//#ddd;
-$navbar-default-toggle-icon-bar-bg:        $th-green-dark;//#ccc;
-$navbar-default-toggle-border-color:       $th-green-dark;//#ddd;
+$navbar-default-toggle-icon-bar-bg:        #fff;//#ccc;
+$navbar-default-toggle-border-color:       #fff;//#ddd;
 
 
 // Inverted navbar

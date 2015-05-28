@@ -379,7 +379,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: white;
-  background-color: #ff9900;
+  background-color: #e80d0d;
 }
 
 /* line 34, ../../app/assets/stylesheets/bootstrap.3.0.3/_scaffolding.scss */
@@ -717,7 +717,7 @@ dd {
   margin-left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 197, ../../app/assets/stylesheets/bootstrap.3.0.3/_type.scss */
   .dl-horizontal dt {
     float: left;
@@ -2027,7 +2027,7 @@ th {
 }
 /* line 56, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
 .table .table, .copy-text table .table, .table .copy-text table, .copy-text .table table, .copy-text table table {
-  background-color: #ff9900;
+  background-color: #e80d0d;
 }
 
 /* line 70, ../../app/assets/stylesheets/bootstrap.3.0.3/_tables.scss */
@@ -3267,7 +3267,7 @@ input[type="button"].btn-block {
   margin-bottom: 1px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 182, ../../app/assets/stylesheets/bootstrap.3.0.3/_dropdowns.scss */
   .navbar-right .dropdown-menu {
     right: 0;
@@ -3743,7 +3743,7 @@ input[type="button"].btn-block {
 /* line 155, ../../app/assets/stylesheets/bootstrap.3.0.3/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #ff9900;
+  background-color: #e80d0d;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3799,7 +3799,7 @@ input[type="button"].btn-block {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #ff9900;
+    border-bottom-color: #e80d0d;
   }
 }
 
@@ -3893,7 +3893,7 @@ input[type="button"].btn-block {
 .navbar:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 11, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar {
     border-radius: 4px;
@@ -3909,7 +3909,7 @@ input[type="button"].btn-block {
 .navbar-header:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 31, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-header {
     float: left;
@@ -3939,7 +3939,7 @@ input[type="button"].btn-block {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 50, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-collapse {
     width: auto;
@@ -3970,7 +3970,7 @@ input[type="button"].btn-block {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 97, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .container > .navbar-header,
   .container > .navbar-collapse {
@@ -3984,7 +3984,7 @@ input[type="button"].btn-block {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 115, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-static-top {
     border-radius: 0;
@@ -3999,7 +3999,7 @@ input[type="button"].btn-block {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 126, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -4031,7 +4031,7 @@ input[type="button"].btn-block {
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 162, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar > .container .navbar-brand {
     margin-left: -15px;
@@ -4062,7 +4062,7 @@ input[type="button"].btn-block {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 174, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-toggle {
     display: none;
@@ -4079,7 +4079,7 @@ input[type="button"].btn-block {
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* line 218, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -4104,7 +4104,7 @@ input[type="button"].btn-block {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 207, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-nav {
     float: left;
@@ -4125,7 +4125,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 267, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-left {
     float: left !important;
@@ -4148,13 +4148,13 @@ input[type="button"].btn-block {
   margin-top: 55px;
   margin-bottom: 55px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* line 293, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 281, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-form {
     width: auto;
@@ -4213,7 +4213,7 @@ input[type="button"].btn-block {
   margin-top: 62px;
   margin-bottom: 62px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 360, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-text {
     float: left;
@@ -4265,7 +4265,7 @@ input[type="button"].btn-block {
 }
 /* line 424, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-toggle {
-  border-color: #06592c;
+  border-color: white;
 }
 /* line 427, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -4273,7 +4273,7 @@ input[type="button"].btn-block {
 }
 /* line 430, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #06592c;
+  background-color: white;
 }
 /* line 436, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
 .navbar-default .navbar-collapse,
@@ -4285,7 +4285,7 @@ input[type="button"].btn-block {
   background-color: transparent;
   color: white;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* line 455, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white;
@@ -4374,7 +4374,7 @@ input[type="button"].btn-block {
   background-color: #090909;
   color: white;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   /* line 575, ../../app/assets/stylesheets/bootstrap.3.0.3/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #090909;
@@ -5460,7 +5460,7 @@ td.visible-print {
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 /* Browser Resets */
-/* line 18, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 18, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
@@ -5468,7 +5468,7 @@ td.visible-print {
   outline: none;
 }
 
-/* line 21, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 21, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -5479,32 +5479,32 @@ td.visible-print {
 
 /* FlexSlider Necessary Styles
 *********************************/
-/* line 25, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 25, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider {
   margin: 0;
   padding: 0;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 27, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 27, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-pauseplay span {
   text-transform: capitalize;
 }
 
 /* Clearfix for the .slides element */
-/* line 31, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 31, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .slides:after {
   content: ".";
   display: block;
@@ -5514,12 +5514,12 @@ td.visible-print {
   height: 0;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 32, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 html[xmlns] .slides {
   display: block;
 }
 
-/* line 33, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 33, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 * html .slides {
   height: 1%;
 }
@@ -5527,14 +5527,14 @@ html[xmlns] .slides {
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-/* line 38, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 38, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .no-js .slides > li:first-child {
   display: block;
 }
 
 /* FlexSlider Default Theme
 *********************************/
-/* line 43, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 43, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider {
   margin: 0 0 60px;
   background: #fff;
@@ -5551,7 +5551,7 @@ html[xmlns] .slides {
   zoom: 1;
 }
 
-/* line 44, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 44, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
@@ -5559,28 +5559,28 @@ html[xmlns] .slides {
   transition: all 1s ease;
 }
 
-/* line 45, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 45, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .loading .flex-viewport {
   max-height: 300px;
 }
 
-/* line 46, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 46, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider .slides {
   zoom: 1;
 }
 
-/* line 48, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 48, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .carousel li {
   margin-right: 5px;
 }
 
 /* Direction Nav */
-/* line 52, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 52, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav {
   *height: 0;
 }
 
-/* line 53, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 53, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav a {
   width: 30px;
   height: 30px;
@@ -5595,35 +5595,35 @@ html[xmlns] .slides {
   -webkit-transition: all .3s ease;
 }
 
-/* line 54, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 54, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav .flex-next {
   background-position: 100% 0;
   right: -36px;
 }
 
-/* line 55, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 55, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav .flex-prev {
   left: -36px;
 }
 
-/* line 56, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 56, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider:hover .flex-next {
   opacity: 0.8;
   right: 5px;
 }
 
-/* line 57, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 57, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider:hover .flex-prev {
   opacity: 0.8;
   left: 5px;
 }
 
-/* line 58, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 58, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
   opacity: 1;
 }
 
-/* line 59, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 59, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-direction-nav .flex-disabled {
   opacity: 0.3 !important;
   filter: alpha(opacity=30);
@@ -5631,7 +5631,7 @@ html[xmlns] .slides {
 }
 
 /* Control Nav */
-/* line 62, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 62, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-nav {
   width: 100%;
   position: absolute;
@@ -5639,7 +5639,7 @@ html[xmlns] .slides {
   text-align: center;
 }
 
-/* line 63, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 63, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-nav li {
   margin: 0 6px;
   display: inline-block;
@@ -5647,7 +5647,7 @@ html[xmlns] .slides {
   *display: inline;
 }
 
-/* line 64, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 64, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-paging li a {
   width: 11px;
   height: 11px;
@@ -5663,34 +5663,34 @@ html[xmlns] .slides {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 65, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 65, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-paging li a:hover {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 66, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 66, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-paging li a.flex-active {
   background: #000;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
 
-/* line 68, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 68, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs {
   margin: 5px 0 0;
   position: static;
   overflow: hidden;
 }
 
-/* line 69, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 69, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs li {
   width: 25%;
   float: left;
   margin: 0;
 }
 
-/* line 70, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 70, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs img {
   width: 100%;
   display: block;
@@ -5698,25 +5698,25 @@ html[xmlns] .slides {
   cursor: pointer;
 }
 
-/* line 71, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 71, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs img:hover {
   opacity: 1;
 }
 
-/* line 72, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+/* line 72, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
 .flex-control-thumbs .flex-active {
   opacity: 1;
   cursor: default;
 }
 
 @media screen and (max-width: 860px) {
-  /* line 75, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+  /* line 75, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
   .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 0;
   }
 
-  /* line 76, ../../../../.rvm/gems/ruby-1.8.7-p370/bundler/gems/gko_cms3-6f5c7fc3820c/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
+  /* line 76, ../../../../.rvm/gems/ruby-1.8.7-p374/bundler/gems/gko_cms3-d4daa8309cae/gko_core/vendor/assets/stylesheets/flexslider/flexslider.css */
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0;
@@ -5844,7 +5844,7 @@ span.valid {
 /* line 39, ../../app/assets/stylesheets/public.css.scss */
 body {
   border-top: 6px solid #14a958;
-  background: #ff9900 url(/assets/bg.png) repeat-x top left;
+  background: #e80d0d url(/assets/bg-red.jpg) repeat-x top left;
 }
 
 /* line 45, ../../app/assets/stylesheets/public.css.scss */
@@ -5895,96 +5895,107 @@ body {
 /* line 70, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail h3 {
   font-size: 14px;
+  margin: 0 !important;
+  text-align: center;
 }
-/* line 73, ../../app/assets/stylesheets/public.css.scss */
+/* line 75, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail a {
   color: #000;
 }
 
-/* line 79, ../../app/assets/stylesheets/public.css.scss */
-#artists .thumbnail {
-  min-height: 180px;
-}
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-/* line 87, ../../app/assets/stylesheets/public.css.scss */
+/* line 91, ../../app/assets/stylesheets/public.css.scss */
 .navbar-brand {
   max-width: 240px;
   padding-top: 30px;
   padding-bottom: 10px;
 }
-@media (min-width: 768px) {
-  /* line 87, ../../app/assets/stylesheets/public.css.scss */
+@media (min-width: 992px) {
+  /* line 91, ../../app/assets/stylesheets/public.css.scss */
   .navbar-brand {
     max-width: none;
     padding-top: 10px;
   }
 }
 
-/* line 97, ../../app/assets/stylesheets/public.css.scss */
+/* line 101, ../../app/assets/stylesheets/public.css.scss */
 .navbar-nav {
   margin-top: -1px;
   background-color: #14a958;
   border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  float: right;
 }
 
-@media (min-width: 768px) {
-  /* line 104, ../../app/assets/stylesheets/public.css.scss */
+@media (min-width: 992px) {
+  /* line 108, ../../app/assets/stylesheets/public.css.scss */
   .navbar-collapse {
     max-height: 60px;
   }
 
-  /* line 107, ../../app/assets/stylesheets/public.css.scss */
+  /* line 111, ../../app/assets/stylesheets/public.css.scss */
   .navbar-nav > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
+/* line 117, ../../app/assets/stylesheets/public.css.scss */
+.shared {
+  background-color: #3b579d;
+  float: right;
+  display: block;
+  min-height: 60px;
+  min-width: 60px;
+  margin-top: -1px;
+  border-bottom-right-radius: 8px;
+}
+/* line 125, ../../app/assets/stylesheets/public.css.scss */
+.shared a {
+  display: block;
+}
+
 /* FOOTER
 -------------------------------------------------- */
-/* line 116, ../../app/assets/stylesheets/public.css.scss */
+/* line 132, ../../app/assets/stylesheets/public.css.scss */
 #partners {
   background: white;
   padding-top: 14px;
   padding-bottom: 14px;
 }
-/* line 120, ../../app/assets/stylesheets/public.css.scss */
+/* line 136, ../../app/assets/stylesheets/public.css.scss */
 #partners .thumbnail > img {
   min-width: 80px;
 }
 
 /* COPYRIGHT
 -------------------------------------------------- */
-/* line 127, ../../app/assets/stylesheets/public.css.scss */
+/* line 143, ../../app/assets/stylesheets/public.css.scss */
 #copyright {
-  background-color: #bf2922;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 131, ../../app/assets/stylesheets/public.css.scss */
+/* line 147, ../../app/assets/stylesheets/public.css.scss */
 #copyright p {
   font-size: 11px;
   margin-bottom: 0;
 }
-/* line 136, ../../app/assets/stylesheets/public.css.scss */
+/* line 152, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li {
   float: left;
   margin-right: 15px;
 }
-/* line 140, ../../app/assets/stylesheets/public.css.scss */
+/* line 156, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li > a {
   font-size: 11px;
   padding: 0;
 }
-/* line 144, ../../app/assets/stylesheets/public.css.scss */
+/* line 160, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li > a:hover {
   color: #15d166;
   background-color: transparent;
 }
 
-/* line 153, ../../app/assets/stylesheets/public.css.scss */
+/* line 169, ../../app/assets/stylesheets/public.css.scss */
 .copyright-author {
   background: transparent url(/assets/gko/logo_gecko_black.png) center left no-repeat;
   padding-left: 28px;
