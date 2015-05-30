@@ -27,10 +27,10 @@
             <input type="hidden" name="submitted" id="submitted" class="button" value="SEND"><button id="submit" class="btn btn-primary btn-block" type="submit"><%= t("gko.inquiry_submit") %></button>
           </div>
           <div class="col-xs-12 form-group">
-            <p id="error" data-alert="" class="alert"><%= t("gko.inquiry_error") %></p>
+            <p id="error" data-alert="" class="alert alert-danger"><%= t("gko.inquiry_error") %></p>
             <p id="thanks" data-alert="" class="alert alert-success"><%= t("gko.inquiry_thanks") %></p>
-            <p id="timedout" data-alert="" class="alert"><%= t("gko.inquiry_connection_time_out") %></p>
-            <p id="state" data-alert="" class="alert"></p>
+            <p id="timedout" data-alert="" class="alert alert-info"><%= t("gko.inquiry_connection_time_out") %></p>
+            <p id="state" data-alert="" class="alert alert-info"></p>
           </div>
         </div>
       </form>

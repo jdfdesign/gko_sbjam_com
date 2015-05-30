@@ -43,14 +43,6 @@ span.valid{
   background-image:image_path("notifications/valid.svg");
 }
 
-.alert{
+.alert {
   display:none;
-  border: 0; 
-  border-radius: 0; 
-  background-color:#ff3333; 
-  color: #fff;
-}
-.alert-success{
-  background-color:#22b573; 
-  color: #fff;
 }

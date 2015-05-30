@@ -2,13 +2,17 @@
 <html class="no-js">
 <%= render 'head' %>
 <body>
+  
   <div id="page-wrapper">
+    
     <%= render "header" %>
     <section class="main-content">
+      <%= render "alert_donate" %>
       <%= yield %>
     </section>
     <%= render 'footer' %> 
   </div>
+  
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
   <%= render 'javascripts' %> 

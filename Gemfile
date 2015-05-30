@@ -22,5 +22,5 @@ end
 #  gem "gko_documents", :path => '~/Github/gko_cms3/gko_documents'
 #  gem "gko_inquiries", :path => '~/Github/gko_cms3/gko_inquiries'
 #  gem "gko_albums", :path => '~/Github/gko_cms3/gko_albums'
-#  gem "gko_features", :path => '~/Github/gko_cms3/gko_features'
+# gem "gko_features", :path => '~/Github/gko_cms3/gko_features'
 #end    

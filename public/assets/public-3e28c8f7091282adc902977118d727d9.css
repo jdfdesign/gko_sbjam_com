@@ -4544,6 +4544,35 @@ a.thumbnail.active {
   color: #843534;
 }
 
+/* line 6, ../../app/assets/stylesheets/bootstrap.3.0.3/_close.scss */
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+  text-shadow: 0 1px 0 white;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+/* line 16, ../../app/assets/stylesheets/bootstrap.3.0.3/_close.scss */
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 27, ../../app/assets/stylesheets/bootstrap.3.0.3/_close.scss */
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
 /* line 7, ../../app/assets/stylesheets/bootstrap.3.0.3/_carousel.scss */
 .carousel {
   position: relative;
@@ -5791,16 +5820,6 @@ span.valid {
 /* line 46, ../../app/assets/stylesheets/theme/_contact.scss */
 .alert {
   display: none;
-  border: 0;
-  border-radius: 0;
-  background-color: #ff3333;
-  color: #fff;
-}
-
-/* line 53, ../../app/assets/stylesheets/theme/_contact.scss */
-.alert-success {
-  background-color: #22b573;
-  color: #fff;
 }
 
 /* line 2, ../../app/assets/stylesheets/theme/_type.scss */
@@ -5845,9 +5864,10 @@ span.valid {
 body {
   border-top: 6px solid #14a958;
   background: #e80d0d url(/assets/bg-red-3f4c92b19b59dd744eb37ed6504627de.jpg) repeat-x top left;
+  position: relative;
 }
 
-/* line 45, ../../app/assets/stylesheets/public.css.scss */
+/* line 46, ../../app/assets/stylesheets/public.css.scss */
 .main-content .container {
   margin-right: auto;
   margin-left: auto;
@@ -5864,25 +5884,25 @@ body {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 45, ../../app/assets/stylesheets/public.css.scss */
+  /* line 46, ../../app/assets/stylesheets/public.css.scss */
   .main-content .container {
     width: 620px;
   }
 }
 @media (min-width: 992px) {
-  /* line 45, ../../app/assets/stylesheets/public.css.scss */
+  /* line 46, ../../app/assets/stylesheets/public.css.scss */
   .main-content .container {
     width: 620px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 45, ../../app/assets/stylesheets/public.css.scss */
+  /* line 46, ../../app/assets/stylesheets/public.css.scss */
   .main-content .container {
     width: 620px;
   }
 }
 
-/* line 60, ../../app/assets/stylesheets/public.css.scss */
+/* line 61, ../../app/assets/stylesheets/public.css.scss */
 .carousel {
   border: 6px solid #fff;
   -webkit-box-shadow: black 0px 10px 10px -10px;
@@ -5890,36 +5910,54 @@ body {
   border-radius: 4px;
 }
 
+/* line 68, ../../app/assets/stylesheets/public.css.scss */
+.alert-donate {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 2000;
+  display: block !important;
+}
+/* line 76, ../../app/assets/stylesheets/public.css.scss */
+.alert-donate .close {
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 /* CUSTOMIZE THE THUMBNAIL
 -------------------------------------------------- */
-/* line 70, ../../app/assets/stylesheets/public.css.scss */
+/* line 87, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail h3 {
   font-size: 14px;
   margin: 0 !important;
   text-align: center;
 }
-/* line 75, ../../app/assets/stylesheets/public.css.scss */
+/* line 92, ../../app/assets/stylesheets/public.css.scss */
 .thumbnail a {
   color: #000;
 }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-/* line 91, ../../app/assets/stylesheets/public.css.scss */
+/* line 108, ../../app/assets/stylesheets/public.css.scss */
 .navbar-brand {
   max-width: 240px;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 @media (min-width: 992px) {
-  /* line 91, ../../app/assets/stylesheets/public.css.scss */
+  /* line 108, ../../app/assets/stylesheets/public.css.scss */
   .navbar-brand {
     max-width: none;
     padding-top: 10px;
   }
 }
 
-/* line 101, ../../app/assets/stylesheets/public.css.scss */
+/* line 118, ../../app/assets/stylesheets/public.css.scss */
 .navbar-nav {
   margin-top: -1px;
   background-color: #14a958;
@@ -5928,18 +5966,18 @@ body {
 }
 
 @media (min-width: 992px) {
-  /* line 108, ../../app/assets/stylesheets/public.css.scss */
+  /* line 125, ../../app/assets/stylesheets/public.css.scss */
   .navbar-collapse {
     max-height: 60px;
   }
 
-  /* line 111, ../../app/assets/stylesheets/public.css.scss */
+  /* line 128, ../../app/assets/stylesheets/public.css.scss */
   .navbar-nav > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-/* line 117, ../../app/assets/stylesheets/public.css.scss */
+/* line 134, ../../app/assets/stylesheets/public.css.scss */
 .shared {
   background-color: #3b579d;
   float: right;
@@ -5949,53 +5987,53 @@ body {
   margin-top: -1px;
   border-bottom-right-radius: 8px;
 }
-/* line 125, ../../app/assets/stylesheets/public.css.scss */
+/* line 142, ../../app/assets/stylesheets/public.css.scss */
 .shared a {
   display: block;
 }
 
 /* FOOTER
 -------------------------------------------------- */
-/* line 132, ../../app/assets/stylesheets/public.css.scss */
+/* line 149, ../../app/assets/stylesheets/public.css.scss */
 #partners {
   background: white;
   padding-top: 14px;
   padding-bottom: 14px;
 }
-/* line 136, ../../app/assets/stylesheets/public.css.scss */
+/* line 153, ../../app/assets/stylesheets/public.css.scss */
 #partners .thumbnail > img {
   min-width: 80px;
 }
 
 /* COPYRIGHT
 -------------------------------------------------- */
-/* line 143, ../../app/assets/stylesheets/public.css.scss */
+/* line 160, ../../app/assets/stylesheets/public.css.scss */
 #copyright {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 147, ../../app/assets/stylesheets/public.css.scss */
+/* line 164, ../../app/assets/stylesheets/public.css.scss */
 #copyright p {
   font-size: 11px;
   margin-bottom: 0;
 }
-/* line 152, ../../app/assets/stylesheets/public.css.scss */
+/* line 169, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li {
   float: left;
   margin-right: 15px;
 }
-/* line 156, ../../app/assets/stylesheets/public.css.scss */
+/* line 173, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li > a {
   font-size: 11px;
   padding: 0;
 }
-/* line 160, ../../app/assets/stylesheets/public.css.scss */
+/* line 177, ../../app/assets/stylesheets/public.css.scss */
 #copyright .nav > li > a:hover {
   color: #15d166;
   background-color: transparent;
 }
 
-/* line 169, ../../app/assets/stylesheets/public.css.scss */
+/* line 186, ../../app/assets/stylesheets/public.css.scss */
 .copyright-author {
   background: transparent url(/assets/gko/logo_gecko_black-b151b8da1c787a3cf4878510fe137657.png) center left no-repeat;
   padding-left: 28px;
